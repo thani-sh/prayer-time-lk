@@ -226,6 +226,28 @@
         }
       }
     },
+    "prayers_city_others" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Others"
+          }
+        },
+        "si" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "වෙනත්"
+          }
+        },
+        "ta" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "மற்றவை"
+          }
+        }
+      }
+    },
     "prayers_method_hanafi" : {
       "localizations" : {
         "en" : {

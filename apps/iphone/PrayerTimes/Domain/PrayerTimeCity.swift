@@ -18,7 +18,7 @@ import SwiftUI
 //   PrayerTimeCity.current = PrayerTimeCity.colombo
 //
 enum PrayerTimeCity: String, CaseIterable, Identifiable {
-  case colombo
+  case colombo, others
   
   // Key used to store notification offset on UserDefaults
   static let key: String = "PrayerTimeCity"
@@ -45,6 +45,8 @@ enum PrayerTimeCity: String, CaseIterable, Identifiable {
     switch self {
       case .colombo:
         return String(localized: "prayers_city_colombo")
+      case .others:
+        return String(localized: "prayers_city_others")
     }
   }
 }

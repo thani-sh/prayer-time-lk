@@ -1,7 +1,7 @@
 {
   "name": "@thani-sh/prayer-time-lk",
   "type": "module",
-  "version": "4.0.4",
+  "version": "4.1.0",
   "description": "Islamic prayer times for Sri Lanka as a JavaScript Module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -14,7 +14,6 @@
     "build": "tsc",
     "test": "vitest",
     "lint": "prettier --write \"src/**/*.{ts}\"",
-    "sync": "node .scripts/sync-times/index.js",
     "prepublishOnly": "npm run build"
   },
   "devDependencies": {
