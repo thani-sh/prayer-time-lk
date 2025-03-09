@@ -1,3 +1,4 @@
 <resources>
     <string name="prayers_city_colombo">Colombo</string>
+    <string name="prayers_city_others">Others</string>
 </resources>

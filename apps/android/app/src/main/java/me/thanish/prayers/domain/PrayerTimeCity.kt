@@ -8,7 +8,8 @@ import me.thanish.prayers.R
  * PrayerTimeCity is the city of a prayer time.
  */
 enum class PrayerTimeCity(private val key: Int) {
-    colombo(R.string.prayers_city_colombo);
+    colombo(R.string.prayers_city_colombo),
+    others(R.string.prayers_city_others);
 
     /**
      * getLabel returns the name of the city with i18n.

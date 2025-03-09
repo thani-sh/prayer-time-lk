@@ -39,11 +39,11 @@
     <string name="route_home_title">தொழுகைகள்</string>
     <string name="next_prayer_widget_name">அடுத்த தொழுகை</string>
     <string name="next_prayer_widget_title">அடுத்த தொழுகை நேரம்</string>
-    <string name="next_prayer_widget_refresh">புதுப்பிக்கவும்</string>
     <string name="prayers_time_until_hm">විනාඩි %dයි</string>
     <string name="prayers_time_until_m">%d நிமிடங்கள்</string>
     <string name="route_settings_open_website">https://prayertime.lk</string>
     <string name="route_settings_section_corrections">திருத்தங்கள்</string>
     <string name="hijri_calendar_offset_template">%d நாட்கள்</string>
     <string name="route_settings_notifications_before_adhan">அதானுக்கு முன் நிமிடங்கள்</string>
+    <string name="notification_body">%1$s தொழுகை %2$s மணிக்கு தொடங்குகிறது</string>
 </resources>

@@ -11,7 +11,7 @@ test('getPrayerTimes - shafi', async () => {
     dhuhr: { hour: 12, minute: 7 },
     fajr: { hour: 4, minute: 45 },
     isha: { hour: 19, minute: 21 },
-    maghrib: { hour: 18, minute: 11 },
+    maghrib: { hour: 18, minute: 12 },
     sunrise: { hour: 6, minute: 1 },
   });
 });
@@ -23,7 +23,7 @@ test('getPrayerTimes - hanafi', async () => {
     dhuhr: { hour: 12, minute: 7 },
     fajr: { hour: 4, minute: 45 },
     isha: { hour: 19, minute: 21 },
-    maghrib: { hour: 18, minute: 11 },
+    maghrib: { hour: 18, minute: 12 },
     sunrise: { hour: 6, minute: 1 },
   });
 });

@@ -39,11 +39,11 @@
     <string name="route_home_title">යාඥා වේලාවන්</string>
     <string name="next_prayer_widget_name">මීළඟ යාඥා</string>
     <string name="next_prayer_widget_title">මීළඟ යාඥා වේලාව</string>
-    <string name="next_prayer_widget_refresh">නැවුම් කරන්න</string>
     <string name="prayers_time_until_hm">පැය %dයි විනාඩි %dයි</string>
     <string name="prayers_time_until_m">%d மணி, %d நிமிடங்கள்</string>
     <string name="route_settings_open_website">https://prayertime.lk</string>
     <string name="route_settings_section_corrections">නිවැරදි කිරීම්</string>
     <string name="hijri_calendar_offset_template">දින %d</string>
     <string name="route_settings_notifications_before_adhan">අසාන් කිරීමට පෙර</string>
+    <string name="notification_body">%1$s යාච්ඤාව %2$s ට ආරම්භ වේ</string>
 </resources>

@@ -1,7 +1,7 @@
 /**
  * List of cities supported by the library.
  */
-export const CITIES = ['colombo'] as const;
+export const CITIES = ['colombo', 'others'] as const;
 
 /**
  * Default city to use if none is provided.
