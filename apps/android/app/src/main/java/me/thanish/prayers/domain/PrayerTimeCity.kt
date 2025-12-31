@@ -40,7 +40,7 @@ enum class PrayerTimeCity(private val key: Int) {
          * get returns the current prayer city.
          */
         fun get(context: Context): PrayerTimeCity {
-            val index = getIntegerSync(context, STORE_KEY, colombo.ordinal)
+            val index = getIntegerSync(context, STORE_KEY, others.ordinal)
             return entries[index]
         }
     }
