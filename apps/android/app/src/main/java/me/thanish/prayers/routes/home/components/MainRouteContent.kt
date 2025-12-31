@@ -101,7 +101,7 @@ fun MainRouteContent(
                             .padding(horizontal = 16.dp),
                     )
                     Text(
-                        text = prayerTime.getTimeString(),
+                        text = prayerTime.getTimeString(context),
                         textAlign = TextAlign.Start,
                         style = valueStyle,
                         modifier = Modifier

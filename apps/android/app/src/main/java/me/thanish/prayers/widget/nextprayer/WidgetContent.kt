@@ -19,6 +19,8 @@ import androidx.glance.preview.Preview
 import androidx.glance.text.FontWeight
 import androidx.glance.text.Text
 import androidx.glance.text.TextStyle
+import androidx.compose.ui.graphics.Color
+import androidx.glance.unit.ColorProvider
 import me.thanish.prayers.domain.PrayerTime
 import me.thanish.prayers.domain.PrayerTimeCity
 import me.thanish.prayers.domain.PrayerTimeMethod
@@ -56,14 +58,14 @@ fun WidgetContent(prayerTime: PrayerTime) {
                     color = GlanceTheme.colors.onSurface
                 )
             )
-            Text(
-                text = prayerTime.getTimeString(),
-                style = TextStyle(
-                    fontWeight = FontWeight.Bold,
-                    fontSize = 16.sp,
-                    color = GlanceTheme.colors.onSurface
-                )
-            )
+        Text(
+            text = prayerTime.getTimeString(context),
+            style = TextStyle(
+                fontSize = 32.sp,
+                fontWeight = FontWeight.Bold,
+                color = ColorProvider(Color(0xFFE5E5E5))
+            ),
+        )
         }
         Spacer(GlanceModifier.defaultWeight())
     }

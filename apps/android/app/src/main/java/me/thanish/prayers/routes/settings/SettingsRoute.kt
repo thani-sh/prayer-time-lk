@@ -32,6 +32,7 @@ import me.thanish.prayers.domain.HijriCalendarOffset
 import me.thanish.prayers.domain.NotificationOffset
 import me.thanish.prayers.domain.PrayerTimeCity
 import me.thanish.prayers.domain.PrayerTimeMethod
+import me.thanish.prayers.domain.TimeFormat
 import me.thanish.prayers.routes.RouteSpec
 import me.thanish.prayers.routes.RouteType
 import me.thanish.prayers.routes.settings.components.FeedbackIconButtons
@@ -40,6 +41,7 @@ import me.thanish.prayers.routes.settings.components.SelectCityDropdown
 import me.thanish.prayers.routes.settings.components.SelectMethodDropdown
 import me.thanish.prayers.routes.settings.components.SelectOffsetSlider
 import me.thanish.prayers.routes.settings.components.SelectOffsetToggle
+import me.thanish.prayers.routes.settings.components.SelectTimeFormatToggle
 import me.thanish.prayers.routes.settings.components.SettingsSectionWithTitle
 import me.thanish.prayers.routes.settings.components.TestNotificationButton
 import me.thanish.prayers.theme.PrayersTheme
@@ -62,6 +64,7 @@ fun SettingsRoute(nav: NavController, modifier: Modifier = Modifier) {
     val context = LocalContext.current
     var city by remember { mutableStateOf(PrayerTimeCity.get(context)) }
     var method by remember { mutableStateOf(PrayerTimeMethod.get(context)) }
+    var timeFormat by remember { mutableStateOf(TimeFormat.get(context)) }
     var offset by remember { mutableStateOf(NotificationOffset.get(context)) }
     var hijriOffset by remember { mutableStateOf(HijriCalendarOffset.get(context)) }
 
@@ -79,6 +82,11 @@ fun SettingsRoute(nav: NavController, modifier: Modifier = Modifier) {
         if (NotificationOffset.isEnabled(context)) {
             SchedulerWorker.schedule(nav.context, method, city)
         }
+    }
+
+    val onTimeFormatChange = { selectedFormat: TimeFormat ->
+        timeFormat = selectedFormat
+        TimeFormat.set(context, selectedFormat)
     }
 
     val onOffsetChange = { selectedOffset: NotificationOffset ->
@@ -121,6 +129,8 @@ fun SettingsRoute(nav: NavController, modifier: Modifier = Modifier) {
         onCityChange,
         method,
         onMethodChange,
+        timeFormat,
+        onTimeFormatChange,
         offset,
         onOffsetChange,
         hijriOffset,
@@ -136,6 +146,8 @@ fun SettingsRouteView(
     onCityChange: (PrayerTimeCity) -> Unit,
     method: PrayerTimeMethod,
     onMethodChange: (PrayerTimeMethod) -> Unit,
+    timeFormat: TimeFormat,
+    onTimeFormatChange: (TimeFormat) -> Unit,
     offset: NotificationOffset,
     onOffsetChange: (NotificationOffset) -> Unit,
     hijriOffset: HijriCalendarOffset,
@@ -155,6 +167,7 @@ fun SettingsRouteView(
         ) {
             SelectCityDropdown(city, onCityChange)
             SelectMethodDropdown(method, onMethodChange)
+            SelectTimeFormatToggle(timeFormat, onTimeFormatChange)
         }
 
         SettingsSectionWithTitle(
@@ -190,10 +203,12 @@ fun SettingsRouteView(
 fun SettingsRoutePreview() {
     val city = PrayerTimeCity.colombo
     val method = PrayerTimeMethod.shafi
+    val timeFormat = TimeFormat.h24
     val offset = NotificationOffset(10)
     val hijriOffset = HijriCalendarOffset(0)
     val onCityChange: (PrayerTimeCity) -> Unit = {}
     val onMethodChange: (PrayerTimeMethod) -> Unit = {}
+    val onTimeFormatChange: (TimeFormat) -> Unit = {}
     val onOffsetChange: (NotificationOffset) -> Unit = {}
     val onHijriOffsetChange: (HijriCalendarOffset) -> Unit = {}
     val onTestNotification: (Long) -> Unit = {}
@@ -205,6 +220,8 @@ fun SettingsRoutePreview() {
                 onCityChange,
                 method,
                 onMethodChange,
+                timeFormat,
+                onTimeFormatChange,
                 offset,
                 onOffsetChange,
                 hijriOffset,
