@@ -24,7 +24,7 @@ fun SelectOffsetToggle(
         ) {
             Text(
                 text = stringResource(R.string.route_settings_notifications),
-                fontSize = 16.sp,
+                fontSize = 12.sp,
                 textAlign = TextAlign.Left,
                 modifier = Modifier.weight(2f)
             )
