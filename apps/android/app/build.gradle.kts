@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace = "me.thanish.prayers"
-    compileSdk = 35
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "me.thanish.prayers"
@@ -30,18 +30,13 @@ android {
         }
     }
 
-    compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_11
-        targetCompatibility = JavaVersion.VERSION_11
-    }
-
-    kotlinOptions {
-        jvmTarget = "11"
-    }
-
     buildFeatures {
         compose = true
     }
+}
+
+kotlin {
+    jvmToolchain(21)
 }
 
 dependencies {
@@ -53,6 +48,7 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
+    implementation(libs.androidx.material.icons.extended)
     implementation(libs.androidx.navigation)
     implementation(libs.androidx.work)
     implementation(libs.androidx.datastore)
