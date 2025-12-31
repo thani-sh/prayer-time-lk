@@ -7,6 +7,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.scale
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.sp
@@ -29,6 +30,7 @@ fun SelectTimeFormatToggle(
                 modifier = Modifier.weight(2f)
             )
             Switch(
+                modifier = Modifier.scale(0.6f),
                 checked = format == TimeFormat.h24,
                 onCheckedChange = {
                     if (it) {

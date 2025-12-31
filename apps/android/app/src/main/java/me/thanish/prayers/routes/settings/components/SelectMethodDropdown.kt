@@ -54,11 +54,11 @@ fun SelectMethodDropdown(
                     .weight(3f)
                     .menuAnchor(type = ExposedDropdownMenuAnchorType.PrimaryNotEditable, enabled = true)
             ) {
+                Spacer(modifier = Modifier.weight(1f))
                 Text(
                     method.getLabel(context),
                     fontSize = 12.sp,
                 )
-                Spacer(modifier = Modifier.weight(1f))
             }
         }
 
