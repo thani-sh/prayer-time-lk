@@ -1,6 +1,6 @@
 {
 	"name": "@thani-sh/prayer-time-lk-api",
-	"version": "4.1.0",
+	"version": "4.2.0",
 	"description": "Islamic prayer times for Sri Lanka as an API",
 	"private": true,
 	"scripts": {

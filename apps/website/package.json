@@ -1,6 +1,6 @@
 {
 	"name": "@thani-sh/prayer-time-lk-website",
-	"version": "4.1.0",
+	"version": "4.2.0",
 	"description": "Islamic prayer times for Sri Lanka as a website",
 	"type": "module",
 	"scripts": {
