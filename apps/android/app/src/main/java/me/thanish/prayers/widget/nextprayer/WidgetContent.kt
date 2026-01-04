@@ -19,8 +19,6 @@ import androidx.glance.preview.Preview
 import androidx.glance.text.FontWeight
 import androidx.glance.text.Text
 import androidx.glance.text.TextStyle
-import androidx.compose.ui.graphics.Color
-import androidx.glance.unit.ColorProvider
 import me.thanish.prayers.domain.PrayerTime
 import me.thanish.prayers.domain.PrayerTimeCity
 import me.thanish.prayers.domain.PrayerTimeMethod
@@ -34,7 +32,7 @@ fun WidgetContent(prayerTime: PrayerTime) {
         modifier = GlanceModifier
             .fillMaxSize()
             .background(GlanceTheme.colors.surface)
-            .padding(8.dp)
+            .padding(4.dp)
     ) {
         Spacer(GlanceModifier.defaultWeight())
         Column(
@@ -45,27 +43,28 @@ fun WidgetContent(prayerTime: PrayerTime) {
             Text(
                 text = "Next",
                 style = TextStyle(
-                    fontWeight = FontWeight.Bold,
-                    fontSize = 8.sp,
+                    fontWeight = FontWeight.Medium,
+                    fontSize = 10.sp,
                     color = GlanceTheme.colors.onSurface
                 ),
             )
-            Spacer(GlanceModifier.height(4.dp))
+            Spacer(GlanceModifier.height(2.dp))
             Text(
                 text = prayerTime.type.getLabel(context),
                 style = TextStyle(
-                    fontSize = 12.sp,
+                    fontSize = 18.sp,
+                    fontWeight = FontWeight.Bold,
                     color = GlanceTheme.colors.onSurface
                 )
             )
-        Text(
-            text = prayerTime.getTimeString(context),
-            style = TextStyle(
-                fontSize = 32.sp,
-                fontWeight = FontWeight.Bold,
-                color = ColorProvider(Color(0xFFE5E5E5))
-            ),
-        )
+            Text(
+                text = prayerTime.getTimeString(context),
+                style = TextStyle(
+                    fontSize = 40.sp,
+                    fontWeight = FontWeight.Bold,
+                    color = GlanceTheme.colors.onSurface
+                ),
+            )
         }
         Spacer(GlanceModifier.defaultWeight())
     }
