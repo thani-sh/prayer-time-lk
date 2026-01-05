@@ -4,6 +4,7 @@
 	import { CodeIcon, MailIcon, CookieIcon } from 'lucide-svelte';
 	import { city } from '$lib/domain/PrayerTimeCity';
 	import { method } from '../../lib/domain/PrayerTimeMethod';
+	import { timeFormat, TIME_FORMATS, type TimeFormat } from '$lib/domain/TimeFormat';
 	import iphoneBadge from './iphone-badge.png';
 	import androidBadge from './android-badge.png';
 </script>
@@ -36,6 +37,9 @@
 			</p>
 			{@render Dropdown('City', CITIES, $city, (value) => city.set(value as City))}
 			{@render Dropdown('Method', METHODS, $method, (value) => method.set(value as Method))}
+			{@render Dropdown('Time Format', TIME_FORMATS, $timeFormat, (value) =>
+				timeFormat.set(value as TimeFormat)
+			)}
 			<p class="text-sm mt-2">
 				This app provides accurate Islamic prayer times sourced from local mosques.
 			</p>
