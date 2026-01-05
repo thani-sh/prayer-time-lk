@@ -1,0 +1,44 @@
+default_platform(:android)
+
+platform :android do
+  desc "Submit a new Beta Build to Play Store Internal Track"
+  lane :beta do
+    # Ensure a keystore is generated/available.
+    # In CI, we will decode the keystore from a secret
+
+    # Build the AAB
+    gradle(
+      task: "clean bundleRelease",
+      properties: {
+        "android.injected.signing.store.file" => ENV["ANDROID_KEYSTORE_FILE"],
+        "android.injected.signing.store.password" => ENV["ANDROID_KEYSTORE_PASSWORD"],
+        "android.injected.signing.key.alias" => ENV["ANDROID_KEY_ALIAS"],
+        "android.injected.signing.key.password" => ENV["ANDROID_KEY_PASSWORD"],
+      }
+    )
+
+    # Upload to Play Store Internal Track
+    upload_to_play_store(
+      track: "internal",
+      release_status: "draft"
+    )
+  end
+
+  desc "Deploy a new version to the Play Store"
+  lane :deploy do
+    gradle(
+      task: "clean bundleRelease",
+      properties: {
+        "android.injected.signing.store.file" => ENV["ANDROID_KEYSTORE_FILE"],
+        "android.injected.signing.store.password" => ENV["ANDROID_KEYSTORE_PASSWORD"],
+        "android.injected.signing.key.alias" => ENV["ANDROID_KEY_ALIAS"],
+        "android.injected.signing.key.password" => ENV["ANDROID_KEY_PASSWORD"],
+      }
+    )
+
+    upload_to_play_store(
+      track: "production",
+      release_status: "draft" # Safer to upload as draft initially
+    )
+  end
+end

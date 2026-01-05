@@ -1,0 +1,51 @@
+default_platform(:ios)
+
+platform :ios do
+  desc "Submit a new Beta Build to TestFlight"
+  lane :beta do
+    # Note: We assume the keychain is unlocked and certificates are installed by the CI workflow.
+
+    # We attempt to increment build number.
+    # This requires Apple Generic Versioning enabled in the Xcode project.
+    # If not enabled, this might fail or do nothing.
+    # We wrap it in a begin/rescue block or check if we can run it.
+    # For now, we'll try to run it but fallback if it fails.
+    begin
+      increment_build_number(
+        build_number: ENV["GITHUB_RUN_NUMBER"]
+      )
+    rescue => ex
+      UI.message("Could not increment build number: #{ex.message}")
+      UI.message("Proceeding with existing version number...")
+    end
+
+    build_app(
+      scheme: "PrayerTimes",
+      export_method: "app-store", # TestFlight uses app-store export
+      xcargs: "-allowProvisioningUpdates"
+    )
+
+    upload_to_testflight
+  end
+
+  desc "Deploy a new version to the App Store"
+  lane :deploy do
+    begin
+      increment_build_number(
+        build_number: ENV["GITHUB_RUN_NUMBER"]
+      )
+    rescue => ex
+      UI.message("Could not increment build number: #{ex.message}")
+    end
+
+    build_app(
+      scheme: "PrayerTimes",
+      export_method: "app-store"
+    )
+
+    upload_to_app_store(
+      force: true,
+      submit_for_review: false
+    )
+  end
+end
