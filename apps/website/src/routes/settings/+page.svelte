@@ -20,7 +20,7 @@
 			class="select select-lg w-full"
 			on:change={(e) => onSelect((e.target as HTMLSelectElement).value)}
 		>
-			{#each options as option}
+			{#each options as option (option)}
 				<option value={option} selected={selected === option}>{capitalize(option)}</option>
 			{/each}
 		</select>

@@ -29,7 +29,7 @@
 <slot />
 
 <div class="dock dock-xl">
-	{#each routes as { path, label, icon }}
+	{#each routes as { path, label, icon } (path)}
 		<a href={path} class={page.url.pathname === path ? 'opacity-80' : 'opacity-40'}>
 			<span
 				class={page.url.pathname === path
