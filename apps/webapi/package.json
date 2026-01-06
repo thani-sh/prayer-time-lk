@@ -1,24 +1,22 @@
 {
-	"name": "@thani-sh/prayer-time-lk-api",
-	"version": "4.2.4",
-	"description": "Islamic prayer times for Sri Lanka as an API",
-	"private": true,
-	"scripts": {
-		"deploy": "wrangler deploy",
-		"dev": "wrangler dev --remote",
-		"test": "vitest",
-		"type": "wrangler types"
-	},
-	"dependencies": {
-		"@cloudflare/workers-types": "^4.20250124.3",
-		"@sveltejs/kit": "0.0.30",
-		"@thani-sh/prayer-time-lk": "^4.2.0",
-		"hono": "^4.6.18"
-	},
-	"devDependencies": {
-		"@cloudflare/vitest-pool-workers": "^0.11.1",
-		"typescript": "^5.5.2",
-		"vitest": "^2.1.9",
-		"wrangler": "^4.5.0"
-	}
+  "name": "@thani-sh/prayer-time-lk-api",
+  "version": "4.2.4",
+  "description": "Islamic prayer times for Sri Lanka as an API",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev --remote",
+    "test": "echo \"No tests implemented yet\"",
+    "type": "wrangler types"
+  },
+  "dependencies": {
+    "@thani-sh/prayer-time-lk": "^4.2.0",
+    "hono": "^4.11.3"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20260103.0",
+    "typescript": "^5.5.2",
+    "wrangler": "^4.4.0"
+  }
 }

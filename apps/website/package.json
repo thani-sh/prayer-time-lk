@@ -1,7 +1,8 @@
 {
 	"name": "@thani-sh/prayer-time-lk-website",
-	"version": "4.2.0",
+	"version": "4.2.4",
 	"description": "Islamic prayer times for Sri Lanka as a website",
+	"private": true,
 	"type": "module",
 	"scripts": {
 		"dev": "vite dev",
@@ -11,31 +12,43 @@
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"format": "prettier --write .",
-		"lint": "prettier --check ."
+		"lint": "prettier --check . && eslint .",
+		"test": "vitest"
 	},
 	"dependencies": {
-		"@cloudflare/vitest-pool-workers": "0.11.1",
-		"@thani-sh/prayer-time-lk": "^4.2.0",
+		"@thani-sh/prayer-time-lk": "^4.2.4",
 		"date-fns": "^4.1.0",
 		"lodash": "^4.17.21",
-		"lucide-svelte": "^0.474.0",
-		"vitest": "2.1.9"
+		"lucide-svelte": "^0.474.0"
 	},
 	"devDependencies": {
+		"@cloudflare/vitest-pool-workers": "0.11.1",
+		"@eslint/compat": "^1.4.0",
+		"@eslint/js": "^9.39.1",
 		"@sveltejs/adapter-cloudflare": "^7.2.4",
-		"@sveltejs/kit": "^2.0.0",
-		"@sveltejs/vite-plugin-svelte": "^5.0.0",
+		"@sveltejs/kit": "^2.49.3",
+		"@sveltejs/vite-plugin-svelte": "^6.2.1",
 		"@tailwindcss/typography": "^0.5.16",
 		"@tailwindcss/vite": "^4.0.0",
 		"@types/lodash": "^4.17.15",
+		"@types/node": "^24",
+		"@vitest/browser-playwright": "^4.0.15",
 		"daisyui": "^5.0.0-beta.2",
-		"prettier": "^3.4.2",
-		"prettier-plugin-svelte": "^3.3.3",
-		"svelte": "^5.0.0",
-		"svelte-check": "^4.0.0",
+		"eslint": "^9.39.1",
+		"eslint-config-prettier": "^10.1.8",
+		"eslint-plugin-svelte": "^3.13.1",
+		"globals": "^16.5.0",
+		"playwright": "^1.57.0",
+		"prettier": "^3.7.4",
+		"prettier-plugin-svelte": "^3.4.0",
+		"svelte": "^5.45.6",
+		"svelte-check": "^4.3.4",
 		"tailwindcss": "^4.0.0",
-		"typescript": "^5.7.3",
-		"vite": "^6.0.0",
+		"typescript": "^5.9.3",
+		"typescript-eslint": "^8.48.1",
+		"vite": "^7.2.6",
+		"vitest": "^4.0.15",
+		"vitest-browser-svelte": "^2.0.1",
 		"wrangler": "^4.54.0"
 	}
 }
