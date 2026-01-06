@@ -14,9 +14,6 @@ permissions:
 jobs:
   validate:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: libs/prayer-time-lk
 
     steps:
       - name: checkout repository
@@ -32,17 +29,20 @@ jobs:
 
       - name: build the package
         run: npm run build
+        working-directory: libs/prayer-time-lk
 
       - name: run linter
         run: npm run lint
+        working-directory: libs/prayer-time-lk
 
       - name: run tests
         run: npm run test
+        working-directory: libs/prayer-time-lk
 
       - name: validate version matches root package.json
         run: |
-          EXPECTED_VERSION=$(node -p "require('../../package.json').version")
-          AVAILABLE_VERSION=$(node -p "require('./package.json').version")
+          EXPECTED_VERSION=$(node -p "require('./package.json').version")
+          AVAILABLE_VERSION=$(node -p "require('./libs/prayer-time-lk/package.json').version")
           echo "Expected version: $EXPECTED_VERSION"
           echo "Available version: $AVAILABLE_VERSION"
           if [ "$AVAILABLE_VERSION" != "$EXPECTED_VERSION" ]; then
