@@ -3,7 +3,6 @@
   "type": "module",
   "version": "4.0.0",
   "private": true,
-  "packageManager": "yarn@4.6.0",
   "workspaces": [
     "apps/webapi",
     "apps/website",

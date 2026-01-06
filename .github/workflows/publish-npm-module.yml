@@ -26,13 +26,13 @@ jobs:
           registry-url: 'https://registry.npmjs.org'
 
       - name: install dependencies
-        run: yarn install
+        run: npm install
 
       - name: build the package
-        run: yarn build
+        run: npm run build
 
       - name: run tests
-        run: yarn test
+        run: npm run test
 
       - name: check if version exists on npm
         id: check-version
@@ -49,6 +49,6 @@ jobs:
 
       - name: publish to npm
         if: steps.check-version.outputs.should_publish == 'true'
-        run: yarn npm publish --access public
+        run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}
