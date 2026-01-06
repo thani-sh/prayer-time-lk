@@ -27,6 +27,10 @@ jobs:
         with:
           node-version: '24'
 
+      - name: build library
+        run: npm run build
+        working-directory: libs/prayer-time-lk
+
       - name: install dependencies
         run: npm install
         working-directory: .
