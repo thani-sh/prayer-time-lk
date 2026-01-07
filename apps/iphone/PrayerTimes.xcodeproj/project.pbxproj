@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		4053A3FA2F0DE7CD00A8817A /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4053A3F92F0DE7CD00A8817A /* WidgetKit.framework */; };
+		4053A3FC2F0DE7CD00A8817A /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4053A3FB2F0DE7CD00A8817A /* SwiftUI.framework */; };
+		4053A40B2F0DE7CE00A8817A /* NextPrayerTimeExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 4053A3F72F0DE7CD00A8817A /* NextPrayerTimeExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		403838CC2D4C321B00A918BE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -21,17 +27,75 @@
 			remoteGlobalIDString = 403838BA2D4C321900A918BE;
 			remoteInfo = "Bönetider";
 		};
+		4053A4092F0DE7CE00A8817A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 403838B32D4C321900A918BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4053A3F62F0DE7CD00A8817A;
+			remoteInfo = NextPrayerTimeExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4053A40C2F0DE7CE00A8817A /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				4053A40B2F0DE7CE00A8817A /* NextPrayerTimeExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		403838BB2D4C321900A918BE /* PrayerTimes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrayerTimes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		403838CB2D4C321B00A918BE /* PrayerTimesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrayerTimesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		403838D52D4C321B00A918BE /* PrayerTimesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrayerTimesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4053A3F72F0DE7CD00A8817A /* NextPrayerTimeExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NextPrayerTimeExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		4053A3F92F0DE7CD00A8817A /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		4053A3FB2F0DE7CD00A8817A /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		4053A40F2F0DE7CE00A8817A /* Exceptions for "NextPrayerTime" folder in "NextPrayerTimeExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 4053A3F62F0DE7CD00A8817A /* NextPrayerTimeExtension */;
+		};
+		4053A4202F0DE93B00A8817A /* Exceptions for "PrayerTimes" folder in "NextPrayerTimeExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Device/FeatureFlags.swift,
+				Domain/HijriCalendarOffset.swift,
+				Domain/NotificationOffset.swift,
+				Domain/PrayerTime.swift,
+				Domain/PrayerTimeCity.swift,
+				Domain/PrayerTimeData.swift,
+				Domain/PrayerTimeMethod.swift,
+				Domain/PrayerTimeTable.swift,
+				Domain/PrayerTimeType.swift,
+				Domain/TimeFormat.swift,
+				Resources/Localizable.xcstrings,
+				Resources/Values/hanafi.colombo.json,
+				Resources/Values/hanafi.others.json,
+				Resources/Values/shafi.colombo.json,
+				Resources/Values/shafi.others.json,
+			);
+			target = 4053A3F62F0DE7CD00A8817A /* NextPrayerTimeExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		403838BD2D4C321900A918BE /* PrayerTimes */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				4053A4202F0DE93B00A8817A /* Exceptions for "PrayerTimes" folder in "NextPrayerTimeExtension" target */,
+			);
 			path = PrayerTimes;
 			sourceTree = "<group>";
 		};
@@ -43,6 +107,14 @@
 		403838D82D4C321B00A918BE /* PrayerTimesUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = PrayerTimesUITests;
+			sourceTree = "<group>";
+		};
+		4053A3FD2F0DE7CD00A8817A /* NextPrayerTime */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				4053A40F2F0DE7CE00A8817A /* Exceptions for "NextPrayerTime" folder in "NextPrayerTimeExtension" target */,
+			);
+			path = NextPrayerTime;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -69,6 +141,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4053A3F42F0DE7CD00A8817A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4053A3FC2F0DE7CD00A8817A /* SwiftUI.framework in Frameworks */,
+				4053A3FA2F0DE7CD00A8817A /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -78,6 +159,8 @@
 				403838BD2D4C321900A918BE /* PrayerTimes */,
 				403838CE2D4C321B00A918BE /* PrayerTimesTests */,
 				403838D82D4C321B00A918BE /* PrayerTimesUITests */,
+				4053A3FD2F0DE7CD00A8817A /* NextPrayerTime */,
+				4053A3F82F0DE7CD00A8817A /* Frameworks */,
 				403838BC2D4C321900A918BE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,8 +171,18 @@
 				403838BB2D4C321900A918BE /* PrayerTimes.app */,
 				403838CB2D4C321B00A918BE /* PrayerTimesTests.xctest */,
 				403838D52D4C321B00A918BE /* PrayerTimesUITests.xctest */,
+				4053A3F72F0DE7CD00A8817A /* NextPrayerTimeExtension.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		4053A3F82F0DE7CD00A8817A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4053A3F92F0DE7CD00A8817A /* WidgetKit.framework */,
+				4053A3FB2F0DE7CD00A8817A /* SwiftUI.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,10 +195,12 @@
 				403838B72D4C321900A918BE /* Sources */,
 				403838B82D4C321900A918BE /* Frameworks */,
 				403838B92D4C321900A918BE /* Resources */,
+				4053A40C2F0DE7CE00A8817A /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				4053A40A2F0DE7CE00A8817A /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				403838BD2D4C321900A918BE /* PrayerTimes */,
@@ -163,6 +258,28 @@
 			productReference = 403838D52D4C321B00A918BE /* PrayerTimesUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		4053A3F62F0DE7CD00A8817A /* NextPrayerTimeExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4053A4102F0DE7CE00A8817A /* Build configuration list for PBXNativeTarget "NextPrayerTimeExtension" */;
+			buildPhases = (
+				4053A3F32F0DE7CD00A8817A /* Sources */,
+				4053A3F42F0DE7CD00A8817A /* Frameworks */,
+				4053A3F52F0DE7CD00A8817A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				4053A3FD2F0DE7CD00A8817A /* NextPrayerTime */,
+			);
+			name = NextPrayerTimeExtension;
+			packageProductDependencies = (
+			);
+			productName = NextPrayerTimeExtension;
+			productReference = 4053A3F72F0DE7CD00A8817A /* NextPrayerTimeExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -170,7 +287,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1620;
+				LastSwiftUpdateCheck = 2620;
 				LastUpgradeCheck = 1620;
 				TargetAttributes = {
 					403838BA2D4C321900A918BE = {
@@ -183,6 +300,9 @@
 					403838D42D4C321B00A918BE = {
 						CreatedOnToolsVersion = 16.2;
 						TestTargetID = 403838BA2D4C321900A918BE;
+					};
+					4053A3F62F0DE7CD00A8817A = {
+						CreatedOnToolsVersion = 26.2;
 					};
 				};
 			};
@@ -205,6 +325,7 @@
 				403838BA2D4C321900A918BE /* PrayerTimes */,
 				403838CA2D4C321B00A918BE /* PrayerTimesTests */,
 				403838D42D4C321B00A918BE /* PrayerTimesUITests */,
+				4053A3F62F0DE7CD00A8817A /* NextPrayerTimeExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -225,6 +346,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		403838D32D4C321B00A918BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4053A3F52F0DE7CD00A8817A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -255,6 +383,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4053A3F32F0DE7CD00A8817A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -267,6 +402,11 @@
 			isa = PBXTargetDependency;
 			target = 403838BA2D4C321900A918BE /* PrayerTimes */;
 			targetProxy = 403838D62D4C321B00A918BE /* PBXContainerItemProxy */;
+		};
+		4053A40A2F0DE7CE00A8817A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4053A3F62F0DE7CD00A8817A /* NextPrayerTimeExtension */;
+			targetProxy = 4053A4092F0DE7CE00A8817A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -524,6 +664,68 @@
 			};
 			name = Release;
 		};
+		4053A40D2F0DE7CE00A8817A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G5ER9796HA;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NextPrayerTime/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = NextPrayerTime;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.thanish.prayers.NextPrayerTime;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4053A40E2F0DE7CE00A8817A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G5ER9796HA;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NextPrayerTime/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = NextPrayerTime;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.thanish.prayers.NextPrayerTime;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -559,6 +761,15 @@
 			buildConfigurations = (
 				403838E62D4C321B00A918BE /* Debug */,
 				403838E72D4C321B00A918BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4053A4102F0DE7CE00A8817A /* Build configuration list for PBXNativeTarget "NextPrayerTimeExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4053A40D2F0DE7CE00A8817A /* Debug */,
+				4053A40E2F0DE7CE00A8817A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
