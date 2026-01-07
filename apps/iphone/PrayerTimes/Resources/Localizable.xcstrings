@@ -70,6 +70,9 @@
         }
       }
     },
+    "Next Prayer" : {
+
+    },
     "notification_before_adhan_enabled" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -979,6 +982,28 @@
         }
       }
     },
+    "route_settings_time_format" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Time Format"
+          }
+        },
+        "si" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "කාල ආකෘතිය"
+          }
+        },
+        "ta" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "நேர வடிவம்"
+          }
+        }
+      }
+    },
     "shared_coming_soon" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -998,6 +1023,97 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "விரைவில்!"
+          }
+        }
+      }
+    },
+    "Shows the next prayer time." : {
+
+    },
+    "time_format_12h" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "12-hour"
+          }
+        },
+        "si" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "පැය 12"
+          }
+        },
+        "ta" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "12-மணிநேரம்"
+          }
+        }
+      }
+    },
+    "time_format_24h" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "24-hour"
+          }
+        },
+        "si" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "පැය 24"
+          }
+        },
+        "ta" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "24-மணிநேரம்"
+          }
+        }
+      }
+    },
+    "widget_next_prayer_label" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Next Prayer"
+          }
+        },
+        "si" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "මීළඟ යාඥාව"
+          }
+        },
+        "ta" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "அடுத்த தொழுகை"
+          }
+        }
+      }
+    },
+    "widget_no_data_label" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No Data"
+          }
+        },
+        "si" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "දත්ත නොමැත"
+          }
+        },
+        "ta" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "தகவல் இல்லை"
           }
         }
       }
