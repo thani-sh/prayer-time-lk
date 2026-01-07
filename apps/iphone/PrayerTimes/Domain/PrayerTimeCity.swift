@@ -24,7 +24,7 @@ enum PrayerTimeCity: String, CaseIterable, Identifiable {
   static let key: String = "PrayerTimeCity"
   
   // The default value to use before a value is picked by the user
-  static let standard: PrayerTimeCity = .colombo
+  static let standard: PrayerTimeCity = .others
   
   // The current prayer time city value stored in UserDefaults
   static var current : PrayerTimeCity {
