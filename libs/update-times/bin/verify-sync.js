@@ -12,7 +12,7 @@ const __rootdir = resolve(__dirname, "../../../");
 const dataDir = resolve(__rootdir, "data");
 
 // Method name used in file naming
-const method = "islamiskaforbundet";
+const method = "acju";
 
 // Maximum age in days before data is considered stale
 const MAX_AGE_DAYS = 7;

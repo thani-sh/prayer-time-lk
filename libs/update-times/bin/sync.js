@@ -1,30 +1,64 @@
-import { mkdir, rm, writeFile } from "node:fs/promises";
-import path from "node:path";
-import { fileURLToPath } from "node:url";
-import { CITIES } from "../src/cities.js";
-import { fetchPrayerTimesForCity } from "../src/prayers.js";
+import { spawn } from "node:child_process"
+import path from "node:path"
+import { fileURLToPath } from "node:url"
 
-// Get the directory name of the current module
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-const __rootdir = path.resolve(__dirname, "../../../");
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = path.dirname(__filename)
+const srcDir = path.resolve(__dirname, "../src")
 
-// Data is from acju.lk/prayer-times
-const method = "acju";
-
-// Define the data directory path relative to the current module
-const outputDir = path.resolve(__dirname, __rootdir, "data");
-
-// Reset the data directory by deleting and recreating it
-await rm(outputDir, { recursive: true, force: true });
-await mkdir(outputDir);
-
-// Iterate over combinations of cities and months and extract data
-for (const city of CITIES) {
-  console.info(`Fetching data for ${city.name}`);
-  const prayerTimes = await fetchPrayerTimesForCity(city);
-  const stringified = JSON.stringify(prayerTimes);
-  // Define the file path relative to the data directory
-  const filePath = path.join(outputDir, `${method}.${city.id}.json`);
-  await writeFile(filePath, stringified);
+/**
+ * runScript executes a script and returns a promise
+ */
+function runScript(scriptPath, stepName) {
+  return new Promise((resolve, reject) => {
+    console.log(`\n${"=".repeat(60)}`)
+    console.log(`Running: ${stepName}`)
+    console.log(`${"=".repeat(60)}\n`)
+    const child = spawn("node", [scriptPath], {
+      stdio: "inherit",
+      cwd: path.dirname(scriptPath),
+    })
+    child.on("exit", (code) => {
+      if (code === 0) {
+        console.log(`\n✅ ${stepName} completed successfully\n`)
+        resolve()
+      } else {
+        reject(new Error(`${stepName} failed with exit code ${code}`))
+      }
+    })
+    child.on("error", (err) => {
+      reject(new Error(`Failed to start ${stepName}: ${err.message}`))
+    })
+  })
 }
+
+/**
+ * Main sync function that runs all 3 steps
+ */
+async function main() {
+  console.log("🔄 Starting prayer times data sync process...\n")
+  try {
+    await runScript(
+      path.join(srcDir, "step-1-download-sources.js"),
+      "Step 1: Download PDFs"
+    )
+    await runScript(
+      path.join(srcDir, "step-2-extract-prayer-times.js"),
+      "Step 2: Extract Prayer Times"
+    )
+    await runScript(
+      path.join(srcDir, "step-3-combine-locations.js"),
+      "Step 3: Combine Locations"
+    )
+    console.log("\n" + "=".repeat(60))
+    console.log("✅ All steps completed successfully!")
+    console.log("=".repeat(60))
+  } catch (error) {
+    console.error("\n" + "=".repeat(60))
+    console.error(`❌ Sync failed: ${error.message}`)
+    console.error("=".repeat(60))
+    process.exit(1)
+  }
+}
+
+main()

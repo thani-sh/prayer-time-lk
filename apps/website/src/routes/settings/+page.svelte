@@ -7,13 +7,28 @@
 	import { timeFormat, TIME_FORMATS, type TimeFormat } from '$lib/domain/TimeFormat';
 	import iphoneBadge from './iphone-badge.png';
 	import androidBadge from './android-badge.png';
+
+	function formatCity(value: string) {
+		if (value === 'nuwaraeliya') {
+			return 'Nuwara Eliya';
+		}
+		return capitalize(value);
+	}
+
+	function formatMethod(value: string) {
+		if (value === 'acju') {
+			return 'ACJU';
+		}
+		return capitalize(value);
+	}
 </script>
 
 {#snippet Dropdown(
 	label: string,
 	options: readonly string[],
 	selected: string,
-	onSelect: (value: string) => void
+	onSelect: (value: string) => void,
+	format: (value: string) => string = capitalize,
 )}
 	<fieldset class="fieldset my-2">
 		<legend class="fieldset-legend">{label}</legend>
@@ -22,7 +37,7 @@
 			on:change={(e) => onSelect((e.target as HTMLSelectElement).value)}
 		>
 			{#each options as option (option)}
-				<option value={option} selected={selected === option}>{capitalize(option)}</option>
+				<option value={option} selected={selected === option}>{format(option)}</option>
 			{/each}
 		</select>
 	</fieldset>
@@ -35,8 +50,8 @@
 			<p class="text-sm">
 				The prayer times displayed in the app are calculated using these settings.
 			</p>
-			{@render Dropdown('City', CITIES, $city, (value) => city.set(value as City))}
-			{@render Dropdown('Method', METHODS, $method, (value) => method.set(value as Method))}
+			{@render Dropdown('City', CITIES, $city, (value) => city.set(value as City), formatCity)}
+			{@render Dropdown('Method', METHODS, $method, (value) => method.set(value as Method), formatMethod)}
 			{@render Dropdown('Time Format', TIME_FORMATS, $timeFormat, (value) =>
 				timeFormat.set(value as TimeFormat)
 			)}

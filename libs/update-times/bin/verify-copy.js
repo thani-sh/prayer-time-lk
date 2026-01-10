@@ -10,13 +10,13 @@ const __dirname = dirname(__filename);
 const __rootdir = resolve(__dirname, "../../../");
 
 // Method name used in file naming
-const method = "islamiskaforbundet";
+const method = "acju";
 
 // Define source and destination directories
 const sourceDir = resolve(__rootdir, "data");
 const destinations = [
   { type: "data", dir: "apps/android/app/src/main/assets/values", label: "Android Assets" },
-  { type: "data", dir: "apps/iphone/prayer-time-lk/Resources/Values", label: "iOS Resources" },
+  { type: "data", dir: "apps/iphone/PrayerTimes/Resources/Values", label: "iOS Resources" },
   { type: "code", dir: "libs/prayer-time-lk/src/data", label: "Library TypeScript" },
 ];
 

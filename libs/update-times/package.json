@@ -1,7 +1,7 @@
 {
   "name": "@thani-sh/update-times",
   "type": "module",
-  "version": "4.2.4",
+  "version": "4.2.5",
   "private": true,
   "scripts": {
     "copy": "node bin/copy.js",
@@ -10,7 +10,8 @@
     "verify-copy": "node bin/verify-copy.js"
   },
   "dependencies": {
-    "cheerio": "^1.0.0"
+    "cheerio": "^1.0.0",
+    "pdf-parse": "^2.4.5"
   },
   "engines": {
     "node": ">=24.0.0"

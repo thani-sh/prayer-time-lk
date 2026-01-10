@@ -1,7 +1,36 @@
 /**
  * List of cities supported by the library.
  */
-export const CITIES = ['colombo', 'others'] as const;
+export const CITIES = [
+  'ampara',
+  'anuradhapura',
+  'badulla',
+  'batticaloa',
+  'colombo',
+  'dehiaththakandiya',
+  'galle',
+  'gampaha',
+  'hambantota',
+  'jaffna',
+  'kalutara',
+  'kandy',
+  'kegalle',
+  'kilinochchi',
+  'kurunegala',
+  'mannar',
+  'matale',
+  'matara',
+  'monaragala',
+  'mullaitivu',
+  'nallur',
+  'nuwaraeliya',
+  'padiyatalawa',
+  'polonnaruwa',
+  'puttalam',
+  'ratnapura',
+  'trincomalee',
+  'vavuniya',
+] as const;
 
 /**
  * Default city to use if none is provided.

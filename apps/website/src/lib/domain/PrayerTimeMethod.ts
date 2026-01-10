@@ -5,7 +5,7 @@ import { writable } from 'svelte/store';
 /**
  * Key used to store in localStorage.
  */
-const STORAGE_KEY = 'prayertime:preferences:method';
+const STORAGE_KEY = 'prayertime:preferences:method:v2';
 
 /**
  * Holds the selected method as a svelte store.
@@ -31,5 +31,5 @@ function getInitialValue(): Method {
 			return storedCity as Method;
 		}
 	}
-	return 'shafi';
+	return 'acju';
 }

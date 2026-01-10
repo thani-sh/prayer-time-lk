@@ -1,6 +1,6 @@
 {
   "name": "@thani-sh/prayer-time-lk-api",
-  "version": "4.2.4",
+  "version": "4.2.5",
   "description": "Islamic prayer times for Sri Lanka as an API",
   "private": true,
   "type": "module",
@@ -11,7 +11,7 @@
     "type": "wrangler types"
   },
   "dependencies": {
-    "@thani-sh/prayer-time-lk": "^4.2.0",
+    "@thani-sh/prayer-time-lk": "^4.2.5",
     "hono": "^4.11.3"
   },
   "devDependencies": {
