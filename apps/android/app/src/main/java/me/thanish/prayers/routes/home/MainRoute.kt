@@ -92,7 +92,7 @@ fun MainRouteView(
 @Preview
 @Composable
 fun MainRoutePreview() {
-    val method = PrayerTimeMethod.shafi
+    val method = PrayerTimeMethod.acju
     val city = PrayerTimeCity.colombo
     val date = LocalDate.now()
 

@@ -202,7 +202,7 @@ fun SettingsRouteView(
 @Composable
 fun SettingsRoutePreview() {
     val city = PrayerTimeCity.colombo
-    val method = PrayerTimeMethod.shafi
+    val method = PrayerTimeMethod.acju
     val timeFormat = TimeFormat.h24
     val offset = NotificationOffset(10)
     val hijriOffset = HijriCalendarOffset(0)

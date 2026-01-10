@@ -75,7 +75,7 @@ fun WidgetContent(prayerTime: PrayerTime) {
 @OptIn(ExperimentalGlancePreviewApi::class)
 @Preview(widthDp = 80, heightDp = 100)
 fun WidgetContentAsrPreview() {
-    val times = PrayerTimeTable.forToday(LocalContext.current, PrayerTimeMethod.shafi, PrayerTimeCity.colombo)
+    val times = PrayerTimeTable.forToday(LocalContext.current, PrayerTimeMethod.acju, PrayerTimeCity.colombo)
 
     GlanceTheme(GlanceTheme.colors) {
         WidgetContent(times.asr)
@@ -86,7 +86,7 @@ fun WidgetContentAsrPreview() {
 @OptIn(ExperimentalGlancePreviewApi::class)
 @Preview(widthDp = 80, heightDp = 100)
 fun WidgetContentMaghribPreview() {
-    val times = PrayerTimeTable.forToday(LocalContext.current, PrayerTimeMethod.shafi, PrayerTimeCity.colombo)
+    val times = PrayerTimeTable.forToday(LocalContext.current, PrayerTimeMethod.acju, PrayerTimeCity.colombo)
 
     GlanceTheme(GlanceTheme.colors) {
         WidgetContent(times.maghrib)
