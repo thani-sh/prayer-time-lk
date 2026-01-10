@@ -15,17 +15,17 @@ import SwiftUI
 //
 // To update the stored value, set the PrayerTimeMethod.current value.
 //
-//   PrayerTimeMethod.current = PrayerTimeMethod.hanafi
+//   PrayerTimeMethod.current = PrayerTimeMethod.acju
 //
 enum PrayerTimeMethod: String, CaseIterable, Identifiable {
-  case shafi, hanafi
-  
+  case acju
+
   // Key used to store notification offset on UserDefaults
-  static let key: String = "PrayerTimeMethod"
-  
+  static let key: String = "PrayerTimeMethodV2"
+
   // The default value to use before a value is picked by the user
-  static let standard: PrayerTimeMethod = .shafi
-  
+  static let standard: PrayerTimeMethod = .acju
+
   // The current prayer time method value stored in UserDefaults
   static var current : PrayerTimeMethod {
     get {
@@ -34,20 +34,17 @@ enum PrayerTimeMethod: String, CaseIterable, Identifiable {
     }
     set { UserDefaults.standard.set(newValue.id, forKey: key) }
   }
-  
+
   // MARK: - Computed Properties
-  
+
   // Unique and machine friendly identifier used for matching
   var id: String { self.rawValue }
-  
+
   // Localized string of the prayer time cuty
   var label: String {
     switch self {
-      case .shafi:
-        return String(localized: "prayers_method_shafi")
-      case .hanafi:
-        return String(localized: "prayers_method_hanafi")
+      case .acju:
+        return String(localized: "prayers_method_acju")
     }
   }
 }
-

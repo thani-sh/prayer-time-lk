@@ -1,4 +1,30 @@
 <resources>
+    <string name="prayers_city_ampara">Ampara</string>
+    <string name="prayers_city_anuradhapura">Anuradhapura</string>
+    <string name="prayers_city_badulla">Badulla</string>
+    <string name="prayers_city_batticaloa">Batticaloa</string>
     <string name="prayers_city_colombo">Colombo</string>
-    <string name="prayers_city_others">Others</string>
+    <string name="prayers_city_dehiaththakandiya">Dehiaththakandiya</string>
+    <string name="prayers_city_galle">Galle</string>
+    <string name="prayers_city_gampaha">Gampaha</string>
+    <string name="prayers_city_hambantota">Hambantota</string>
+    <string name="prayers_city_jaffna">Jaffna</string>
+    <string name="prayers_city_kalutara">Kalutara</string>
+    <string name="prayers_city_kandy">Kandy</string>
+    <string name="prayers_city_kegalle">Kegalle</string>
+    <string name="prayers_city_kilinochchi">Kilinochchi</string>
+    <string name="prayers_city_kurunegala">Kurunegala</string>
+    <string name="prayers_city_mannar">Mannar</string>
+    <string name="prayers_city_matale">Matale</string>
+    <string name="prayers_city_matara">Matara</string>
+    <string name="prayers_city_monaragala">Monaragala</string>
+    <string name="prayers_city_mullaitivu">Mullaitivu</string>
+    <string name="prayers_city_nallur">Nallur</string>
+    <string name="prayers_city_nuwaraeliya">Nuwara Eliya</string>
+    <string name="prayers_city_padiyatalawa">Padiyatalawa</string>
+    <string name="prayers_city_polonnaruwa">Polonnaruwa</string>
+    <string name="prayers_city_puttalam">Puttalam</string>
+    <string name="prayers_city_ratnapura">Ratnapura</string>
+    <string name="prayers_city_trincomalee">Trincomalee</string>
+    <string name="prayers_city_vavuniya">Vavuniya</string>
 </resources>

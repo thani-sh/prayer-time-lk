@@ -19,7 +19,7 @@
     <string name="route_settings_hijri_calendar_offset_days">Hijri calendar offset</string>
     <string name="route_settings_test_notification">Test Notification</string>
     <string name="route_settings_section_methodology">Prayer times</string>
-    <string name="route_settings_section_methodology_details">The prayer times displayed in the app are calculated using these settings.</string>
+    <string name="route_settings_section_methodology_details">Data sourced from the official ACJU website.</string>
     <string name="route_settings_section_notifications">Notifications</string>
     <string name="route_settings_section_notifications_details">Turn prayer notifications on or off and customize how long before the prayer time you want to receive the notifications.</string>
     <string name="route_settings_section_corrections">Corrections</string>
@@ -35,8 +35,7 @@
     <string name="prayers_type_asr">Asr</string>
     <string name="prayers_type_maghrib">Maghrib</string>
     <string name="prayers_type_isha">Isha</string>
-    <string name="prayers_method_shafi">Shafi</string>
-    <string name="prayers_method_hanafi">Hanafi</string>
+    <string name="prayers_method_acju">ACJU</string>
     <string name="time_format_12h">12-hour</string>
     <string name="time_format_24h">24-hour</string>
     <string name="notification_offset_template">%d mins</string>

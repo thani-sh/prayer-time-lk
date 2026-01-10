@@ -1,4 +1,30 @@
 <resources>
+    <string name="prayers_city_ampara">අම්පාර</string>
+    <string name="prayers_city_anuradhapura">අනුරාධපුරය</string>
+    <string name="prayers_city_badulla">බදුල්ල</string>
+    <string name="prayers_city_batticaloa">මඩකලපුව</string>
     <string name="prayers_city_colombo">කොළඹ</string>
-    <string name="prayers_city_others">වෙනත්</string>
+    <string name="prayers_city_dehiaththakandiya">දෙහිඅත්තකණ්ඩිය</string>
+    <string name="prayers_city_galle">ගාල්ල</string>
+    <string name="prayers_city_gampaha">ගම්පහ</string>
+    <string name="prayers_city_hambantota">හම්බන්තොට</string>
+    <string name="prayers_city_jaffna">යාපනය</string>
+    <string name="prayers_city_kalutara">කළුතර</string>
+    <string name="prayers_city_kandy">මහනුවර</string>
+    <string name="prayers_city_kegalle">කෑගල්ල</string>
+    <string name="prayers_city_kilinochchi">කිලිනොච්චිය</string>
+    <string name="prayers_city_kurunegala">කුරුණෑගල</string>
+    <string name="prayers_city_mannar">මන්නාරම</string>
+    <string name="prayers_city_matale">මාතලේ</string>
+    <string name="prayers_city_matara">මාතර</string>
+    <string name="prayers_city_monaragala">මොණරාගල</string>
+    <string name="prayers_city_mullaitivu">මුලතිව්</string>
+    <string name="prayers_city_nallur">නල්ලූර්</string>
+    <string name="prayers_city_nuwaraeliya">නුවර එළිය</string>
+    <string name="prayers_city_padiyatalawa">පදියතලාව</string>
+    <string name="prayers_city_polonnaruwa">පොළොන්නරුව</string>
+    <string name="prayers_city_puttalam">පුත්තලම</string>
+    <string name="prayers_city_ratnapura">රත්නපුර</string>
+    <string name="prayers_city_trincomalee">ත්‍රිකුණාමලය</string>
+    <string name="prayers_city_vavuniya">වවුනියාව</string>
 </resources>

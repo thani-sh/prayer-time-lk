@@ -11,8 +11,7 @@ enum class PrayerTimeMethod(
     private val labelKey: Int,
     private val descriptionKey: Int? = null
 ) {
-    shafi(R.string.prayers_method_shafi),
-    hanafi(R.string.prayers_method_hanafi);
+    acju(R.string.prayers_method_acju);
 
     /**
      * getLabel returns the name of the prayer method with i18n.
@@ -39,7 +38,7 @@ enum class PrayerTimeMethod(
         /**
          * STORE_KEY is the MMKV key for storing the current prayer method.
          */
-        private val STORE_KEY = intPreferencesKey("PrayerTimeMethod")
+        private val STORE_KEY = intPreferencesKey("PrayerTimeMethodV2")
 
         /**
          * set sets the current prayer method.
@@ -52,7 +51,7 @@ enum class PrayerTimeMethod(
          * get returns the current prayer method.
          */
         fun get(context: Context): PrayerTimeMethod {
-            val index = getIntegerSync(context, STORE_KEY, shafi.ordinal)
+            val index = getIntegerSync(context, STORE_KEY, acju.ordinal)
             return entries[index]
         }
     }

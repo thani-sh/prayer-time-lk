@@ -1,4 +1,30 @@
 <resources>
+    <string name="prayers_city_ampara">அம்பாறை</string>
+    <string name="prayers_city_anuradhapura">அனுராதபுரம்</string>
+    <string name="prayers_city_badulla">பதுளை</string>
+    <string name="prayers_city_batticaloa">மட்டக்களப்பு</string>
     <string name="prayers_city_colombo">கொழும்பு</string>
-    <string name="prayers_city_others">மற்றவை</string>
+    <string name="prayers_city_dehiaththakandiya">தெஹியத்தகண்டி</string>
+    <string name="prayers_city_galle">காலி</string>
+    <string name="prayers_city_gampaha">கம்பஹா</string>
+    <string name="prayers_city_hambantota">அம்பாந்தோட்டை</string>
+    <string name="prayers_city_jaffna">யாழ்ப்பாணம்</string>
+    <string name="prayers_city_kalutara">களுத்துறை</string>
+    <string name="prayers_city_kandy">கண்டி</string>
+    <string name="prayers_city_kegalle">கேகாலை</string>
+    <string name="prayers_city_kilinochchi">கிளிநொச்சி</string>
+    <string name="prayers_city_kurunegala">குருநாகல்</string>
+    <string name="prayers_city_mannar">மன்னார்</string>
+    <string name="prayers_city_matale">மாத்தளை</string>
+    <string name="prayers_city_matara">மாத்தறை</string>
+    <string name="prayers_city_monaragala">மொணராகலை</string>
+    <string name="prayers_city_mullaitivu">முல்லைத்தீவு</string>
+    <string name="prayers_city_nallur">நல்லூர்</string>
+    <string name="prayers_city_nuwaraeliya">நுவரெலியா</string>
+    <string name="prayers_city_padiyatalawa">பதியத்தலாவ</string>
+    <string name="prayers_city_polonnaruwa">பொலன்னறுவை</string>
+    <string name="prayers_city_puttalam">புத்தளம்</string>
+    <string name="prayers_city_ratnapura">இரத்தினபுரி</string>
+    <string name="prayers_city_trincomalee">திருகோணமலை</string>
+    <string name="prayers_city_vavuniya">வவுனியா</string>
 </resources>

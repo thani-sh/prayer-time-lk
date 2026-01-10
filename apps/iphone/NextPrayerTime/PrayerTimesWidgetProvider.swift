@@ -11,7 +11,7 @@ import SwiftUI
 struct PrayerTimesWidgetProvider: TimelineProvider {
     func placeholder(in context: Context) -> PrayerTimesWidgetEntry {
         // Return a dummy entry
-        let dummy = PrayerTime(method: .shafi, city: .colombo, type: .asr, time: Date())
+        let dummy = PrayerTime(method: .acju, city: .colombo, type: .asr, time: Date())
         return PrayerTimesWidgetEntry(date: Date(), prayerTime: dummy)
     }
 

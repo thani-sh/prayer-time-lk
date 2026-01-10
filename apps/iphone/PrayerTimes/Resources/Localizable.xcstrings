@@ -229,70 +229,200 @@
         }
       }
     },
-    "prayers_city_others" : {
+    "prayers_city_ampara" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Others"
-          }
-        },
-        "si" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "වෙනත්"
-          }
-        },
-        "ta" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "மற்றவை"
-          }
-        }
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Ampara" } },
+        "si" : { "stringUnit" : { "state" : "translated", "value" : "අම්පාර" } },
+        "ta" : { "stringUnit" : { "state" : "translated", "value" : "அம்பாறை" } }
       }
     },
-    "prayers_method_hanafi" : {
+    "prayers_city_anuradhapura" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Hanafi"
-          }
-        },
-        "si" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "හනෆි"
-          }
-        },
-        "ta" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ஹனஃபி"
-          }
-        }
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Anuradhapura" } },
+        "si" : { "stringUnit" : { "state" : "translated", "value" : "අනුරාධපුරය" } },
+        "ta" : { "stringUnit" : { "state" : "translated", "value" : "அனுராதபுரம்" } }
       }
     },
-    "prayers_method_shafi" : {
+    "prayers_city_badulla" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Shafi"
-          }
-        },
-        "si" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ෂාෆි"
-          }
-        },
-        "ta" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ஷாஃபி"
-          }
-        }
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Badulla" } },
+        "si" : { "stringUnit" : { "state" : "translated", "value" : "බදුල්ල" } },
+        "ta" : { "stringUnit" : { "state" : "translated", "value" : "பதுளை" } }
+      }
+    },
+    "prayers_city_batticaloa" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Batticaloa" } },
+        "si" : { "stringUnit" : { "state" : "translated", "value" : "මඩකලපුව" } },
+        "ta" : { "stringUnit" : { "state" : "translated", "value" : "மட்டக்களப்பு" } }
+      }
+    },
+    "prayers_city_dehiaththakandiya" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Dehiaththakandiya" } },
+        "si" : { "stringUnit" : { "state" : "translated", "value" : "දෙහිඅත්තකණ්ඩිය" } },
+        "ta" : { "stringUnit" : { "state" : "translated", "value" : "தெஹியத்தகண்டி" } }
+      }
+    },
+    "prayers_city_galle" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Galle" } },
+        "si" : { "stringUnit" : { "state" : "translated", "value" : "ගාල්ල" } },
+        "ta" : { "stringUnit" : { "state" : "translated", "value" : "காலி" } }
+      }
+    },
+    "prayers_city_gampaha" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Gampaha" } },
+        "si" : { "stringUnit" : { "state" : "translated", "value" : "ගම්පහ" } },
+        "ta" : { "stringUnit" : { "state" : "translated", "value" : "கம்பஹா" } }
+      }
+    },
+    "prayers_city_hambantota" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Hambantota" } },
+        "si" : { "stringUnit" : { "state" : "translated", "value" : "හම්බන්තොට" } },
+        "ta" : { "stringUnit" : { "state" : "translated", "value" : "அம்பாந்தோட்டை" } }
+      }
+    },
+    "prayers_city_jaffna" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Jaffna" } },
+        "si" : { "stringUnit" : { "state" : "translated", "value" : "යාපනය" } },
+        "ta" : { "stringUnit" : { "state" : "translated", "value" : "யாழ்ப்பாணம்" } }
+      }
+    },
+    "prayers_city_kalutara" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Kalutara" } },
+        "si" : { "stringUnit" : { "state" : "translated", "value" : "කළුතර" } },
+        "ta" : { "stringUnit" : { "state" : "translated", "value" : "களுத்துறை" } }
+      }
+    },
+    "prayers_city_kandy" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Kandy" } },
+        "si" : { "stringUnit" : { "state" : "translated", "value" : "මහනුවර" } },
+        "ta" : { "stringUnit" : { "state" : "translated", "value" : "கண்டி" } }
+      }
+    },
+    "prayers_city_kegalle" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Kegalle" } },
+        "si" : { "stringUnit" : { "state" : "translated", "value" : "කෑගල්ල" } },
+        "ta" : { "stringUnit" : { "state" : "translated", "value" : "கேகாலை" } }
+      }
+    },
+    "prayers_city_kilinochchi" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Kilinochchi" } },
+        "si" : { "stringUnit" : { "state" : "translated", "value" : "කිලිනොච්චිය" } },
+        "ta" : { "stringUnit" : { "state" : "translated", "value" : "கிளிநொச்சி" } }
+      }
+    },
+    "prayers_city_kurunegala" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Kurunegala" } },
+        "si" : { "stringUnit" : { "state" : "translated", "value" : "කුරුණෑගල" } },
+        "ta" : { "stringUnit" : { "state" : "translated", "value" : "குருநாகல்" } }
+      }
+    },
+    "prayers_city_mannar" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Mannar" } },
+        "si" : { "stringUnit" : { "state" : "translated", "value" : "මන්නාරම" } },
+        "ta" : { "stringUnit" : { "state" : "translated", "value" : "மன்னார்" } }
+      }
+    },
+    "prayers_city_matale" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Matale" } },
+        "si" : { "stringUnit" : { "state" : "translated", "value" : "මාතලේ" } },
+        "ta" : { "stringUnit" : { "state" : "translated", "value" : "மாத்தளை" } }
+      }
+    },
+    "prayers_city_matara" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Matara" } },
+        "si" : { "stringUnit" : { "state" : "translated", "value" : "මාතර" } },
+        "ta" : { "stringUnit" : { "state" : "translated", "value" : "மாத்தறை" } }
+      }
+    },
+    "prayers_city_monaragala" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Monaragala" } },
+        "si" : { "stringUnit" : { "state" : "translated", "value" : "මොණරාගල" } },
+        "ta" : { "stringUnit" : { "state" : "translated", "value" : "மொணராகலை" } }
+      }
+    },
+    "prayers_city_mullaitivu" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Mullaitivu" } },
+        "si" : { "stringUnit" : { "state" : "translated", "value" : "මුලතිව්" } },
+        "ta" : { "stringUnit" : { "state" : "translated", "value" : "முல்லைத்தீவு" } }
+      }
+    },
+    "prayers_city_nallur" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Nallur" } },
+        "si" : { "stringUnit" : { "state" : "translated", "value" : "නල්ලූර්" } },
+        "ta" : { "stringUnit" : { "state" : "translated", "value" : "நல்லூர்" } }
+      }
+    },
+    "prayers_city_nuwaraeliya" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Nuwara Eliya" } },
+        "si" : { "stringUnit" : { "state" : "translated", "value" : "නුවර එළිය" } },
+        "ta" : { "stringUnit" : { "state" : "translated", "value" : "நுவரெலியா" } }
+      }
+    },
+    "prayers_city_padiyatalawa" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Padiyatalawa" } },
+        "si" : { "stringUnit" : { "state" : "translated", "value" : "පදියතලාව" } },
+        "ta" : { "stringUnit" : { "state" : "translated", "value" : "பதியத்தலாவ" } }
+      }
+    },
+    "prayers_city_polonnaruwa" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Polonnaruwa" } },
+        "si" : { "stringUnit" : { "state" : "translated", "value" : "පොළොන්නරුව" } },
+        "ta" : { "stringUnit" : { "state" : "translated", "value" : "பொலன்னறுவை" } }
+      }
+    },
+    "prayers_city_puttalam" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Puttalam" } },
+        "si" : { "stringUnit" : { "state" : "translated", "value" : "පුත්තලම" } },
+        "ta" : { "stringUnit" : { "state" : "translated", "value" : "புத்தளம்" } }
+      }
+    },
+    "prayers_city_ratnapura" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Ratnapura" } },
+        "si" : { "stringUnit" : { "state" : "translated", "value" : "රත්නපුර" } },
+        "ta" : { "stringUnit" : { "state" : "translated", "value" : "இரத்தினபுரி" } }
+      }
+    },
+    "prayers_city_trincomalee" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Trincomalee" } },
+        "si" : { "stringUnit" : { "state" : "translated", "value" : "ත්‍රිකුණාමලය" } },
+        "ta" : { "stringUnit" : { "state" : "translated", "value" : "திருகோணமலை" } }
+      }
+    },
+    "prayers_city_vavuniya" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Vavuniya" } },
+        "si" : { "stringUnit" : { "state" : "translated", "value" : "වවුනියාව" } },
+        "ta" : { "stringUnit" : { "state" : "translated", "value" : "வவுனியா" } }
+      }
+    },
+    "prayers_method_acju" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "ACJU" } },
+        "si" : { "stringUnit" : { "state" : "translated", "value" : "ACJU" } },
+        "ta" : { "stringUnit" : { "state" : "translated", "value" : "ACJU" } }
       }
     },
     "prayers_time_until_hm %lld %lld" : {
@@ -920,19 +1050,19 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "This app provides accurate Islamic prayer times from local sources."
+            "value" : "Data sourced from the official ACJU website."
           }
         },
         "si" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "යෙදුමේ ප්‍රාර්ථනා වේලා පහත සැකසුම් අනුව ගණනය කර පිළිගැන්වෙයි."
+            "value" : "Data sourced from the official ACJU website."
           }
         },
         "ta" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "செயலியில் காட்டப்படும் ஜமாஅத் நேரங்கள் இந்த அமைப்புகளை அடிப்படையாகக் கொண்டு கணக்கிடப்பட்டுள்ளன."
+            "value" : "Data sourced from the official ACJU website."
           }
         }
       }

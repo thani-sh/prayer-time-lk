@@ -17,7 +17,7 @@
     <string name="route_settings_hijri_calendar_offset_days">ஹிஜ்ரி நாட்காட்டி ஈடுபாடு</string>
     <string name="route_settings_test_notification">அறிவிப்பை பரிசோதனை</string>
     <string name="route_settings_section_methodology">முறை</string>
-    <string name="route_settings_section_methodology_details">செயலியில் காட்டப்படும் ஜமாஅத் நேரங்கள் இந்த அமைப்புகளை அடிப்படையாகக் கொண்டு கணக்கிடப்பட்டுள்ளன.</string>
+    <string name="route_settings_section_methodology_details">ACJU இன் அதிகாரப்பூர்வ இணையதளத்திலிருந்து பெறப்பட்ட தகவல்கள்.</string>
     <string name="route_settings_section_notifications">அறிவிப்புகள்</string>
     <string name="route_settings_section_notifications_details">ஜமாஅத் அறிவிப்புகளை இயக்க அல்லது முடக்கவும், மற்றும் ஜமாஅத் நேரத்திற்கு முன் அறிவிப்புகளை பெற எவ்வளவு தாமதம் வேண்டும் என்பதை அமைக்கவும்.</string>
     <string name="route_settings_section_corrections_details">தேவைப்படும்போது பயன்பாட்டில் காட்டப்படும் மதிப்புகளைச் சரிசெய்ய இந்த அமைப்புகளைப் பயன்படுத்தவும் (எ.கா: ஹிஜ்ரி நாட்காட்டி)</string>
@@ -31,8 +31,7 @@
     <string name="prayers_type_asr">அஸ்ர்</string>
     <string name="prayers_type_maghrib">மஃரிப்</string>
     <string name="prayers_type_isha">இஷா</string>
-    <string name="prayers_method_shafi">ஷாஃபி</string>
-    <string name="prayers_method_hanafi">ஹனஃபி</string>
+    <string name="prayers_method_acju">ACJU</string>
     <string name="notification_offset_template">%d நிமி.</string>
     <string name="notification_offset_disabled">வேண்டாம்</string>
     <string name="hijri_calendar_offset_disabled">முடக்கப்பட்டது</string>

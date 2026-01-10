@@ -17,7 +17,7 @@
     <string name="route_settings_hijri_calendar_offset_days">හිජ්රි දින දර්ශක අපගමනය</string>
     <string name="route_settings_test_notification">දැනුම්දීම අත්හදා බලන්න</string>
     <string name="route_settings_section_methodology">ක්රමවේදය</string>
-    <string name="route_settings_section_methodology_details">යෙදුමේ ප්‍රාර්ථනා වේලා පහත සැකසුම් අනුව ගණනය කර පිළිගැන්වෙයි.</string>
+    <string name="route_settings_section_methodology_details">දත්ත නිල ACJU වෙබ් අඩවියෙන් ලබාගෙන ඇත.</string>
     <string name="route_settings_section_notifications">දැනුම්දීම</string>
     <string name="route_settings_section_notifications_details">ප්‍රාර්ථනා දැන්වීම් සක්‍රීය හෝ අක්‍රිය කරන්න සහ ප්‍රාර්ථනා වේලාවට පෙර දැන්වීම් ලබා ගැනීමට ඔබට අවශ්‍ය ප්‍රමාදය සකසන්න.</string>
     <string name="route_settings_section_corrections_details">අවශ්‍ය විටෙක යෙදුමේ පෙන්වා ඇති අගයන් නිවැරදි කිරීමට මෙම සැකසුම් භාවිතා කරන්න (උදා: හිජ්රි දින දර්ශනය)</string>
@@ -31,8 +31,7 @@
     <string name="prayers_type_asr">අසර්</string>
     <string name="prayers_type_maghrib">මාග්රිබ්</string>
     <string name="prayers_type_isha">ඉෂා</string>
-    <string name="prayers_method_shafi">ෂාෆි</string>
-    <string name="prayers_method_hanafi">හනෆි</string>
+    <string name="prayers_method_acju">ACJU</string>
     <string name="notification_offset_template">මිනි %d</string>
     <string name="notification_offset_disabled">එපා</string>
     <string name="hijri_calendar_offset_disabled">අක්‍රීයයි</string>
