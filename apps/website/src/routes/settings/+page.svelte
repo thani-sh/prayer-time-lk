@@ -28,7 +28,7 @@
 	options: readonly string[],
 	selected: string,
 	onSelect: (value: string) => void,
-	format: (value: string) => string = capitalize,
+	format: (value: string) => string = capitalize
 )}
 	<fieldset class="fieldset my-2">
 		<legend class="fieldset-legend">{label}</legend>
@@ -51,7 +51,13 @@
 				The prayer times displayed in the app are calculated using these settings.
 			</p>
 			{@render Dropdown('City', CITIES, $city, (value) => city.set(value as City), formatCity)}
-			{@render Dropdown('Method', METHODS, $method, (value) => method.set(value as Method), formatMethod)}
+			{@render Dropdown(
+				'Method',
+				METHODS,
+				$method,
+				(value) => method.set(value as Method),
+				formatMethod
+			)}
 			{@render Dropdown('Time Format', TIME_FORMATS, $timeFormat, (value) =>
 				timeFormat.set(value as TimeFormat)
 			)}

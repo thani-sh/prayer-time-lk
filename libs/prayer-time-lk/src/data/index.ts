@@ -5,8 +5,7 @@ export default {
     badulla: () => import('./acju.badulla').then((m) => m.default),
     batticaloa: () => import('./acju.batticaloa').then((m) => m.default),
     colombo: () => import('./acju.colombo').then((m) => m.default),
-    dehiaththakandiya: () =>
-      import('./acju.dehiaththakandiya').then((m) => m.default),
+    dehiaththakandiya: () => import('./acju.dehiaththakandiya').then((m) => m.default),
     galle: () => import('./acju.galle').then((m) => m.default),
     gampaha: () => import('./acju.gampaha').then((m) => m.default),
     hambantota: () => import('./acju.hambantota').then((m) => m.default),
