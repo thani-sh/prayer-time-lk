@@ -2,6 +2,9 @@ package me.thanish.prayers.domain
 
 import android.content.Context
 import androidx.datastore.preferences.core.intPreferencesKey
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 import me.thanish.prayers.R
 
 /**
@@ -45,6 +48,9 @@ enum class PrayerTimeMethod(
          */
         fun set(context: Context, method: PrayerTimeMethod) {
             setIntegerSync(context, STORE_KEY, method.ordinal)
+            CoroutineScope(Dispatchers.IO).launch {
+                PrayerTimeRepository.syncIfNeeded(context)
+            }
         }
 
         /**

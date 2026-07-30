@@ -1,6 +1,6 @@
 package me.thanish.prayers.device
 
 /**
- * Specifies whether to enable Hanafi Asr time
+ * Specifies whether to enable debugging tools
  */
 const val DEBUG_ENABLED = false
