@@ -1,27 +1,5 @@
-import { expect, test, vi } from 'vitest';
+import { expect, test } from 'vitest';
 import { getPrayerTimes } from './index';
-
-/**
- * Mock global fetch for offline/CI environment tests
- */
-vi.stubGlobal('fetch', async (url: string) => {
-  if (url.includes('/colombo/')) {
-    return {
-      ok: true,
-      json: async () => [300, 382, 735, 937, 1087, 1161],
-    };
-  }
-  if (url.includes('/ampara/')) {
-    return {
-      ok: true,
-      json: async () => [293, 376, 728, 929, 1078, 1153],
-    };
-  }
-  return {
-    ok: false,
-    statusText: 'Not Found',
-  };
-});
 
 /**
  * Tests for the getPrayerTimes function
