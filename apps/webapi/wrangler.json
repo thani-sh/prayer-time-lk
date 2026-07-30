@@ -5,17 +5,17 @@
 	"observability": {
 		"enabled": true
 	},
-	"r2_buckets": [
-		{
-			"binding": "BUCKET",
-			"bucket_name": "prayer-time-lk",
-			"preview_bucket_name": "prayer-time-lk"
-		}
-	],
 	"routes": [
 		{
 			"pattern": "api.prayertime.lk",
 			"custom_domain": true
+		}
+	],
+	"d1_databases": [
+		{
+			"binding": "db",
+			"database_name": "prayer-time-lk",
+			"database_id": "prayer-time-lk"
 		}
 	]
 }

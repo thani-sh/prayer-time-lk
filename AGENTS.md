@@ -14,7 +14,8 @@ prayer-time-lk/
 │   ├── webapi/               # REST API service (Cloudflare Workers)
 │   └── website/              # Web application (SvelteKit)
 ├── libs/                     # Shared libraries
-│   └── prayer-time-lk/       # Core JavaScript library for prayer times
+│   ├── prayer-time-lk/       # Core JavaScript library for prayer times
+│   └── update-times/         # Data synchronization utility
 └── data/                     # Prayer time datasets (JSON files)
 ```
 
@@ -42,6 +43,8 @@ prayer-time-lk/
 
 ### Data Processing
 
+- **pdf-parse** - PDF parsing utility for ACJU prayer schedules
+- **cheerio** - HTML parsing utility
 - **date-fns** - Date utility library
 - **Lodash** - JavaScript utility library
 
@@ -53,8 +56,11 @@ prayer-time-lk/
 
 ## Web APIs
 
+### External API
+- **ACJU (All Ceylon Jamiyyathul Ulama)** - Primary calculation authority for Sri Lanka prayer times
+
 ### Internal REST API
-- **Prayer Times API (v1)** - RESTful API providing prayer time data for Sri Lankan cities, hosted on Cloudflare Workers with R2 bucket storage
+- **Prayer Times API (v1)** - RESTful API providing prayer time data for Sri Lankan cities, hosted on Cloudflare Workers with Cloudflare D1 database storage
 
 ## Applications
 
@@ -64,6 +70,7 @@ prayer-time-lk/
 
 **Capabilities**:
 - Display daily prayer times for selected Sri Lankan cities
+- Show current date in Gregorian and Hijri calendars
 - Select prayer time calculation methods
 - Select Sri Lankan cities
 - Progressive Web App (PWA) with service worker support
@@ -73,7 +80,7 @@ prayer-time-lk/
 - Qibla compass
 
 **Missing Features**:
-- Hijri calendar display
+- Qibla compass (placeholder only)
 - 12/24 hour format switch
 - Prayer time notifications
 
@@ -82,7 +89,7 @@ prayer-time-lk/
 **Technology**: Swift + SwiftUI
 
 **Capabilities**:
-- Display daily prayer times
+- Display daily prayer times with pageable date navigation
 - Hijri calendar display with adjustable offset
 - Qibla compass with real-time heading and location services
 - Prayer time notifications with configurable offsets
@@ -118,7 +125,7 @@ prayer-time-lk/
 
 ### Web API (`apps/webapi`)
 
-**Technology**: Hono + Cloudflare Workers + R2 Storage
+**Technology**: Hono + Cloudflare Workers + D1 Storage
 
 **Capabilities**:
 - RESTful API endpoints for prayer times

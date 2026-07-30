@@ -1,12 +1,13 @@
 {
   "name": "prayer-time-lk",
   "type": "module",
-  "version": "4.2.5",
+  "version": "5.0.0",
   "private": true,
   "workspaces": [
     "apps/webapi",
     "apps/website",
-    "libs/prayer-time-lk"
+    "libs/prayer-time-lk",
+    "libs/update-times"
   ],
   "engines": {
     "node": ">=24.0.0"

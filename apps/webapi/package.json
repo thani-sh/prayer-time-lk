@@ -1,22 +1,30 @@
 {
-  "name": "@thani-sh/prayer-time-lk-api",
-  "version": "4.2.5",
-  "description": "Islamic prayer times for Sri Lanka as an API",
-  "private": true,
-  "type": "module",
-  "scripts": {
-    "deploy": "wrangler deploy",
-    "dev": "wrangler dev --remote",
-    "test": "echo \"No tests implemented yet\"",
-    "type": "wrangler types"
-  },
-  "dependencies": {
-    "@thani-sh/prayer-time-lk": "^4.2.5",
-    "hono": "^4.11.3"
-  },
-  "devDependencies": {
-    "@cloudflare/workers-types": "^4.20260103.0",
-    "typescript": "^5.5.2",
-    "wrangler": "^4.4.0"
-  }
+	"name": "@thani-sh/prayer-time-lk-api",
+	"version": "5.0.0",
+	"description": "Islamic prayer times for Sri Lanka as an API",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"deploy": "wrangler deploy",
+		"dev": "wrangler dev --remote",
+		"test": "vitest --passWithNoTests",
+		"type": "wrangler types",
+		"db:update": "bash scripts/db-update.sh",
+		"db:verify": "tsx scripts/db-verify.ts"
+	},
+	"dependencies": {
+		"@cloudflare/workers-types": "^4.20250124.3",
+		"@thani-sh/prayer-time-lk": "^5.0.0",
+		"@types/node": "^25.3.5",
+		"drizzle-orm": "^0.45.1",
+		"hono": "^4.6.18"
+	},
+	"devDependencies": {
+		"@cloudflare/vitest-pool-workers": "^0.6.4",
+		"drizzle-kit": "^0.31.9",
+		"tsx": "^4.21.0",
+		"typescript": "^5.5.2",
+		"vitest": "2.1.8",
+		"wrangler": "^4.5.0"
+	}
 }
