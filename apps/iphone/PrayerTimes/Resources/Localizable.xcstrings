@@ -777,6 +777,29 @@
         }
       }
     },
+    "route_settings_button_refresh" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Check for updates"
+          }
+        },
+        "si" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "යාවත්කාලීන පරීක්ෂා කරන්න"
+          }
+        },
+        "ta" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "புதுப்பிப்புகளைச் சரிபார்க்கவும்"
+          }
+        }
+      }
+    },
     "route_settings_city" : {
       "localizations" : {
         "en" : {

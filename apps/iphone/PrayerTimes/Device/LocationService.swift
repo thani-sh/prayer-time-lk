@@ -42,7 +42,7 @@ class LocationService: NSObject, ObservableObject, CLLocationManagerDelegate {
     longitude: 39.8262
   )
   
-  // Coordinates of stockholm used as the default location
+  // Coordinates of colombo used as the default location
   static let defaultLocation = CLLocationCoordinate2D(
     latitude: 6.9271,
     longitude: 79.8612
