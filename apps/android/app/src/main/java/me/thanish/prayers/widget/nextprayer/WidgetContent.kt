@@ -61,7 +61,7 @@ fun WidgetContent(prayerTime: PrayerTime) {
         Text(
             text = prayerTime.getTimeString(context),
             style = TextStyle(
-                fontSize = 32.sp,
+                fontSize = 36.sp,
                 fontWeight = FontWeight.Bold,
                 color = ColorProvider(Color(0xFFE5E5E5))
             ),
@@ -73,7 +73,7 @@ fun WidgetContent(prayerTime: PrayerTime) {
 
 @Composable
 @OptIn(ExperimentalGlancePreviewApi::class)
-@Preview(widthDp = 80, heightDp = 100)
+@Preview(widthDp = 170, heightDp = 80)
 fun WidgetContentAsrPreview() {
     val times = PrayerTimeTable.forToday(LocalContext.current, PrayerTimeMethod.acju, PrayerTimeCity.colombo)
 
@@ -84,7 +84,7 @@ fun WidgetContentAsrPreview() {
 
 @Composable
 @OptIn(ExperimentalGlancePreviewApi::class)
-@Preview(widthDp = 80, heightDp = 100)
+@Preview(widthDp = 170, heightDp = 80)
 fun WidgetContentMaghribPreview() {
     val times = PrayerTimeTable.forToday(LocalContext.current, PrayerTimeMethod.acju, PrayerTimeCity.colombo)
 
