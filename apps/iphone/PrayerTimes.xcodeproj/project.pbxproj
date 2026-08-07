@@ -82,6 +82,34 @@
 				Domain/PrayerTimeType.swift,
 				Domain/TimeFormat.swift,
 				Resources/Localizable.xcstrings,
+				Resources/Values/acju.ampara.json,
+				Resources/Values/acju.anuradhapura.json,
+				Resources/Values/acju.badulla.json,
+				Resources/Values/acju.batticaloa.json,
+				Resources/Values/acju.colombo.json,
+				Resources/Values/acju.dehiaththakandiya.json,
+				Resources/Values/acju.galle.json,
+				Resources/Values/acju.gampaha.json,
+				Resources/Values/acju.hambantota.json,
+				Resources/Values/acju.jaffna.json,
+				Resources/Values/acju.kalutara.json,
+				Resources/Values/acju.kandy.json,
+				Resources/Values/acju.kegalle.json,
+				Resources/Values/acju.kilinochchi.json,
+				Resources/Values/acju.kurunegala.json,
+				Resources/Values/acju.mannar.json,
+				Resources/Values/acju.matale.json,
+				Resources/Values/acju.matara.json,
+				Resources/Values/acju.monaragala.json,
+				Resources/Values/acju.mullaitivu.json,
+				Resources/Values/acju.nallur.json,
+				Resources/Values/acju.nuwaraeliya.json,
+				Resources/Values/acju.padiyatalawa.json,
+				Resources/Values/acju.polonnaruwa.json,
+				Resources/Values/acju.puttalam.json,
+				Resources/Values/acju.ratnapura.json,
+				Resources/Values/acju.trincomalee.json,
+				Resources/Values/acju.vavuniya.json,
 			);
 			target = 4053A3F62F0DE7CD00A8817A /* NextPrayerTimeExtension */;
 		};
@@ -540,7 +568,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 9;
 				DEVELOPMENT_ASSET_PATHS = "\"PrayerTimes/Preview Content\"";
 				DEVELOPMENT_TEAM = G5ER9796HA;
 				ENABLE_PREVIEWS = YES;
@@ -557,7 +585,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 5.0.0;
+				MARKETING_VERSION = 5.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = me.thanish.prayers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -572,7 +600,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 9;
 				DEVELOPMENT_ASSET_PATHS = "\"PrayerTimes/Preview Content\"";
 				DEVELOPMENT_TEAM = G5ER9796HA;
 				ENABLE_PREVIEWS = YES;
@@ -589,7 +617,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 5.0.0;
+				MARKETING_VERSION = 5.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = me.thanish.prayers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -606,7 +634,7 @@
 				CURRENT_PROJECT_VERSION = 2;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
-				MARKETING_VERSION = 5.0.0;
+				MARKETING_VERSION = 5.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "me.thanish.Bo-netiderTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
@@ -624,7 +652,7 @@
 				CURRENT_PROJECT_VERSION = 2;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
-				MARKETING_VERSION = 5.0.0;
+				MARKETING_VERSION = 5.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "me.thanish.Bo-netiderTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
@@ -640,7 +668,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
 				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 5.0.0;
+				MARKETING_VERSION = 5.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "me.thanish.Bo-netiderUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
@@ -656,7 +684,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
 				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 5.0.0;
+				MARKETING_VERSION = 5.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "me.thanish.Bo-netiderUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
@@ -673,7 +701,7 @@
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_ENTITLEMENTS = NextPrayerTimeExtensionDebug.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 9;
 				DEVELOPMENT_TEAM = G5ER9796HA;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = NextPrayerTime/Info.plist;
@@ -685,7 +713,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 5.0.0;
+				MARKETING_VERSION = 5.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = me.thanish.prayers.NextPrayerTime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -704,7 +732,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 9;
 				DEVELOPMENT_TEAM = G5ER9796HA;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = NextPrayerTime/Info.plist;
@@ -716,7 +744,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 5.0.0;
+				MARKETING_VERSION = 5.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = me.thanish.prayers.NextPrayerTime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;

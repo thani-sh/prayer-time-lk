@@ -16,18 +16,19 @@ struct PrayerTimesWidgetView: View {
             if let prayer = entry.prayerTime {
                 Spacer()
                 
-                Text(String(localized: "widget_next_prayer_label"))
-                    .font(.system(size: 10, weight: .bold))
-                    .foregroundStyle(.tertiary)
+                Text(prayer.type.label.uppercased())
+                    .font(.system(size: 12, weight: .bold))
+                    .foregroundStyle(.tint)
 
-                Text(prayer.type.label)
-                    .font(.system(size: 16, weight: .medium, design: .default))
-                    .foregroundStyle(.secondary)
-                
                 Text(prayer.timeString)
-                    .font(.system(size: 34, weight: .semibold, design: .rounded))
+                    .font(.system(size: 32, weight: .bold, design: .rounded))
                     .foregroundStyle(.primary)
                     .minimumScaleFactor(0.6)
+                    .lineLimit(1)
+
+                Text(prayer.time, style: .relative)
+                    .font(.system(size: 10))
+                    .foregroundStyle(.secondary)
                     .lineLimit(1)
                 
                 Spacer()

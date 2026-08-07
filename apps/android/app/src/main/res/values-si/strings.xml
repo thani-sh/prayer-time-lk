@@ -39,10 +39,19 @@
     <string name="next_prayer_widget_name">මීළඟ යාඥා</string>
     <string name="next_prayer_widget_title">මීළඟ යාඥා වේලාව</string>
     <string name="prayers_time_until_hm">පැය %dයි විනාඩි %dයි</string>
-    <string name="prayers_time_until_m">%d மணி, %d நிமிடங்கள்</string>
+    <string name="prayers_time_until_m">විනාඩි %dකින්</string>
     <string name="route_settings_open_website">https://prayertime.lk</string>
     <string name="route_settings_section_corrections">නිවැරදි කිරීම්</string>
     <string name="hijri_calendar_offset_template">දින %d</string>
     <string name="route_settings_notifications_before_adhan">අසාන් කිරීමට පෙර</string>
     <string name="notification_body">%1$s යාච්ඤාව %2$s ට ආරම්භ වේ</string>
+    <string name="notification_on_time_body">දැන් %1$s යාඥාව සඳහා වේලාවයි</string>
+    <string name="route_settings_time_format">පැය 24 ආකෘතිය භාවිත කරන්න</string>
+    <string name="route_settings_sync_data">දත්ත යාවත්කාලීන කරන්න</string>
+    <string name="route_settings_sync_data_progress">දත්ත යාවත්කාලීන වෙමින් පවතී (%1$d/%2$d)</string>
+    <string name="route_settings_sync_data_success">දත්ත සාර්ථකව යාවත්කාලීන විය</string>
+    <string name="route_settings_sync_data_failure">දත්ත යාවත්කාලීන කිරීම අසාර්ථක විය</string>
+    <string name="time_format_12h">පැය 12</string>
+    <string name="time_format_24h">පැය 24</string>
+    <string name="next_prayer_widget_next">ඊළඟ</string>
 </resources>

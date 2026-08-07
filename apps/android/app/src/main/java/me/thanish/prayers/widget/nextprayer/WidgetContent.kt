@@ -9,6 +9,7 @@ import androidx.glance.LocalContext
 import androidx.glance.background
 import androidx.glance.layout.Alignment
 import androidx.glance.layout.Column
+import androidx.glance.layout.Row
 import androidx.glance.layout.Spacer
 import androidx.glance.layout.fillMaxSize
 import androidx.glance.layout.fillMaxWidth
@@ -19,54 +20,52 @@ import androidx.glance.preview.Preview
 import androidx.glance.text.FontWeight
 import androidx.glance.text.Text
 import androidx.glance.text.TextStyle
-import androidx.compose.ui.graphics.Color
-import androidx.glance.unit.ColorProvider
 import me.thanish.prayers.domain.PrayerTime
 import me.thanish.prayers.domain.PrayerTimeCity
 import me.thanish.prayers.domain.PrayerTimeMethod
 import me.thanish.prayers.domain.PrayerTimeTable
 
 @Composable
-fun WidgetContent(prayerTime: PrayerTime) {
+fun WidgetContent(prayerTime: PrayerTime, modifier: GlanceModifier = GlanceModifier) {
     val context = LocalContext.current
 
     Column(
-        modifier = GlanceModifier
+        modifier = modifier
             .fillMaxSize()
             .background(GlanceTheme.colors.surface)
-            .padding(8.dp)
+            .padding(12.dp)
     ) {
         Spacer(GlanceModifier.defaultWeight())
-        Column(
-            horizontalAlignment = Alignment.Start,
+        Row(
             verticalAlignment = Alignment.CenterVertically,
             modifier = GlanceModifier.fillMaxWidth()
         ) {
             Text(
-                text = "Next",
+                text = prayerTime.type.getLabel(context).uppercase(),
                 style = TextStyle(
                     fontWeight = FontWeight.Bold,
-                    fontSize = 8.sp,
-                    color = GlanceTheme.colors.onSurface
-                ),
-            )
-            Spacer(GlanceModifier.height(4.dp))
-            Text(
-                text = prayerTime.type.getLabel(context),
-                style = TextStyle(
                     fontSize = 12.sp,
-                    color = GlanceTheme.colors.onSurface
+                    color = GlanceTheme.colors.primary
                 )
             )
+        }
+        Spacer(GlanceModifier.height(2.dp))
         Text(
             text = prayerTime.getTimeString(context),
             style = TextStyle(
-                fontSize = 36.sp,
+                fontSize = 32.sp,
                 fontWeight = FontWeight.Bold,
-                color = ColorProvider(Color(0xFFE5E5E5))
-            ),
+                color = GlanceTheme.colors.onSurface
+            )
         )
-        }
+        Spacer(GlanceModifier.height(2.dp))
+        Text(
+            text = prayerTime.getUntilString(context),
+            style = TextStyle(
+                fontSize = 10.sp,
+                color = GlanceTheme.colors.onSurfaceVariant
+            )
+        )
         Spacer(GlanceModifier.defaultWeight())
     }
 }
@@ -74,21 +73,10 @@ fun WidgetContent(prayerTime: PrayerTime) {
 @Composable
 @OptIn(ExperimentalGlancePreviewApi::class)
 @Preview(widthDp = 170, heightDp = 80)
-fun WidgetContentAsrPreview() {
+fun WidgetContentPreview() {
     val times = PrayerTimeTable.forToday(LocalContext.current, PrayerTimeMethod.acju, PrayerTimeCity.colombo)
 
     GlanceTheme(GlanceTheme.colors) {
         WidgetContent(times.asr)
-    }
-}
-
-@Composable
-@OptIn(ExperimentalGlancePreviewApi::class)
-@Preview(widthDp = 170, heightDp = 80)
-fun WidgetContentMaghribPreview() {
-    val times = PrayerTimeTable.forToday(LocalContext.current, PrayerTimeMethod.acju, PrayerTimeCity.colombo)
-
-    GlanceTheme(GlanceTheme.colors) {
-        WidgetContent(times.maghrib)
     }
 }
