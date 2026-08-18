@@ -51,7 +51,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		403838BB2D4C321900A918BE /* PrayerTimes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrayerTimes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		403838BB2D4C321900A918BE /* SL Prayer Times.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SL Prayer Times.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		403838CB2D4C321B00A918BE /* PrayerTimesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrayerTimesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		403838D52D4C321B00A918BE /* PrayerTimesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrayerTimesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4053A3F72F0DE7CD00A8817A /* NextPrayerTimeExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NextPrayerTimeExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -194,7 +194,7 @@
 		403838BC2D4C321900A918BE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				403838BB2D4C321900A918BE /* PrayerTimes.app */,
+				403838BB2D4C321900A918BE /* SL Prayer Times.app */,
 				403838CB2D4C321B00A918BE /* PrayerTimesTests.xctest */,
 				403838D52D4C321B00A918BE /* PrayerTimesUITests.xctest */,
 				4053A3F72F0DE7CD00A8817A /* NextPrayerTimeExtension.appex */,
@@ -235,7 +235,7 @@
 			packageProductDependencies = (
 			);
 			productName = "Bönetider";
-			productReference = 403838BB2D4C321900A918BE /* PrayerTimes.app */;
+			productReference = 403838BB2D4C321900A918BE /* SL Prayer Times.app */;
 			productType = "com.apple.product-type.application";
 		};
 		403838CA2D4C321B00A918BE /* PrayerTimesTests */ = {
@@ -587,7 +587,7 @@
 				);
 				MARKETING_VERSION = 5.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = me.thanish.prayers;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "SL Prayer Times";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -619,7 +619,7 @@
 				);
 				MARKETING_VERSION = 5.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = me.thanish.prayers;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "SL Prayer Times";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
