@@ -8,6 +8,7 @@ import kotlinx.coroutines.withContext
 import me.thanish.prayers.storage.AppDatabase
 import me.thanish.prayers.storage.MetadataEntity
 import me.thanish.prayers.storage.PrayerTimeEntity
+import java.net.HttpURLConnection
 import java.net.URL
 
 object PrayerTimeRepository {
@@ -38,9 +39,27 @@ object PrayerTimeRepository {
 
     private suspend fun getRemoteVersion(): String = withContext(Dispatchers.IO) {
         val url = URL("$BASE_URL/v1/version")
-        val json = url.readText()
+        val json = fetchFresh(url)
         val map = Gson().fromJson(json, Map::class.java)
         map["updated"] as String
+    }
+
+    /**
+     * Fetch with the response cache disabled. The version gate only works if
+     * both sides of the comparison are network-fresh: /v1/version is always
+     * fetched fresh here, so the full-year payloads fetched on a version
+     * mismatch must be too. Otherwise a data change could pair the new
+     * version metadata with up-to-24h-old cached payloads, and the stale
+     * times would then be kept in Room until the next version bump.
+     */
+    private fun fetchFresh(url: URL): String {
+        val connection = url.openConnection() as HttpURLConnection
+        connection.useCaches = false
+        return try {
+            connection.inputStream.bufferedReader().use { it.readText() }
+        } finally {
+            connection.disconnect()
+        }
     }
 
     private suspend fun getLocalVersion(context: Context): String? {
@@ -61,7 +80,7 @@ object PrayerTimeRepository {
             for (city in PrayerTimeCity.entries) {
                 try {
                     val url = URL("$BASE_URL/v1/method/$method/city/$city/times")
-                    val json = url.readText()
+                    val json = fetchFresh(url)
                     val dataset = Gson().fromJson(json, Array<Array<Array<Int>>>::class.java)
 
                     for (m in dataset.indices) {
