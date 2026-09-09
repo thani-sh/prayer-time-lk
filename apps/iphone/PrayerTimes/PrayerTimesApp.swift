@@ -32,7 +32,7 @@ struct PrayerTimesApp: App {
       }
     }
     .backgroundTask(.appRefresh(SchedulerWorker.identifier)) {
-      SchedulerWorker.scheduleNotifications()
+      await SchedulerWorker.runBackgroundRefresh()
     }
   }
 }
