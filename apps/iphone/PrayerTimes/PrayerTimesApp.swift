@@ -31,8 +31,12 @@ struct PrayerTimesApp: App {
         SchedulerWorker.initialize()
       }
     }
-    .backgroundTask(.appRefresh(SchedulerWorker.identifier)) {
+    .backgroundTask(.appRefresh(SchedulerWorker.identifier)) { task in
+      task.expirationHandler = {
+        task.setTaskCompleted(success: false)
+      }
       SchedulerWorker.scheduleNotifications()
+      task.setTaskCompleted(success: true)
     }
   }
 }
