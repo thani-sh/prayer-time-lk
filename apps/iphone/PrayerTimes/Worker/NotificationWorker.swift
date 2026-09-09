@@ -10,7 +10,7 @@ import SwiftUI
 // NotificationWorker is reponsible for scheduling notifications and
 // other tasks related to showing a notification to the user.
 struct NotificationWorker {
-  static let category = "me.thanish.prayers.se.NotificationWorker"
+  static let category = "me.thanish.prayers.NotificationWorker"
   
   // Sets up the worker when the app is launched by the user.
   static func initialize() {
