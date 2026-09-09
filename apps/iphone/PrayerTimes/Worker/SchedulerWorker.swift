@@ -16,7 +16,7 @@ struct SchedulerWorker {
   static let interval: TimeInterval = 60 * 60
   
   // A unique identifier for the scheduler worker bg tasks.
-  static let identifier: String = "me.thanish.prayers.se.SchedulerWorker"
+  static let identifier: String = "me.thanish.prayers.SchedulerWorker"
   
   // The number of upcoming prayers to schedule in bg task.
   static let toSchedule = 5
