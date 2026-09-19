@@ -13,8 +13,8 @@
     <string name="route_settings_name">සැකසීම්</string>
     <string name="route_settings_city">නගරය</string>
     <string name="route_settings_method">ක්රමවේදය</string>
-    <string name="route_settings_notifications">දැනුම්දීම්</string>
-    <string name="route_settings_hijri_calendar_offset_days">හිජ්රි දින දර්ශක අපගමනය</string>
+    <string name="notification_before_adhan_enabled">දැනුම්දීම්</string>
+    <string name="hijri_calendar_offset_label">හිජ්රි දින දර්ශක අපගමනය</string>
     <string name="route_settings_test_notification">දැනුම්දීම අත්හදා බලන්න</string>
     <string name="route_settings_section_methodology">ක්රමවේදය</string>
     <string name="route_settings_section_methodology_details">දත්ත නිල ACJU වෙබ් අඩවියෙන් ලබාගෙන ඇත.</string>
@@ -43,7 +43,7 @@
     <string name="route_settings_open_website">https://prayertime.lk</string>
     <string name="route_settings_section_corrections">නිවැරදි කිරීම්</string>
     <string name="hijri_calendar_offset_template">දින %d</string>
-    <string name="route_settings_notifications_before_adhan">අසාන් කිරීමට පෙර</string>
+    <string name="notification_before_adhan_offset">අසාන් කිරීමට පෙර</string>
     <string name="notification_body">%1$s යාච්ඤාව %2$s ට ආරම්භ වේ</string>
     <string name="notification_on_time_body">දැන් %1$s යාඥාව සඳහා වේලාවයි</string>
     <string name="route_settings_time_format">පැය 24 ආකෘතිය භාවිත කරන්න</string>
