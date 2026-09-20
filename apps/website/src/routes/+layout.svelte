@@ -3,11 +3,12 @@
 	import { page } from '$app/state';
 	import { onNavigate } from '$app/navigation';
 	import { CalendarIcon, CompassIcon, SettingsIcon } from 'lucide-svelte';
+	import { t } from '$lib/i18n';
 
 	const routes = [
-		{ path: '/', label: 'Timetable', icon: CalendarIcon },
-		{ path: '/compass', label: 'Compass', icon: CompassIcon },
-		{ path: '/settings', label: 'Preferences', icon: SettingsIcon }
+		{ path: '/', label: t('route_home_name'), icon: CalendarIcon },
+		{ path: '/compass', label: t('route_compass_name'), icon: CompassIcon },
+		{ path: '/settings', label: t('route_settings_preferences'), icon: SettingsIcon }
 	];
 
 	/**

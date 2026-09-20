@@ -1,8 +1,10 @@
 <script lang="ts">
 	import { getPrayerTimes } from '@thani-sh/prayer-time-lk';
+	import { hijriCalendarOffset, clampHijriCalendarOffset } from '$lib/domain/HijriCalendarOffset';
 	import { city } from '$lib/domain/PrayerTimeCity';
 	import { method } from '$lib/domain/PrayerTimeMethod';
 	import { timeFormat } from '$lib/domain/TimeFormat';
+	import { t } from '$lib/i18n';
 
 	const hijriDateFormatter = new Intl.DateTimeFormat('ar-TN-u-ca-islamic', {
 		year: 'numeric',
@@ -17,8 +19,10 @@
 		return date.toLocaleDateString();
 	}
 
-	function getHijriDateString() {
-		return hijriDateFormatter.format(date);
+	function getHijriDateString(offset: number) {
+		const offsetDate = new Date(date);
+		offsetDate.setDate(offsetDate.getDate() + clampHijriCalendarOffset(offset));
+		return hijriDateFormatter.format(offsetDate);
 	}
 
 	function formatTime(hour: number, minute: number, format: '12h' | '24h') {
@@ -49,20 +53,30 @@
 
 <div class="flex flex-col items-center justify-center h-screen w-full">
 	<div class="flex flex-col items-center mb-16">
-		<h1 class="text-5xl font-bold mb-2">Prayer Times</h1>
-		<p class="text-md text-gray-500">{getDateString()} - {getHijriDateString()}</p>
+		<h1 class="text-5xl font-bold mb-2">{t('route_home_title')}</h1>
+		<p class="text-md text-gray-500">
+			{getDateString()} - {getHijriDateString($hijriCalendarOffset)}
+		</p>
 	</div>
 
 	{#await getPrayerTimes(date, $method, $city) then prayerTimes}
 		<div class="w-3xs divide-y divide-gray-100 dark:divide-gray-800 mb-16">
-			{@render TableRow('Fajr', prayerTimes.fajr.hour, prayerTimes.fajr.minute)}
-			{@render TableRow('Sunrise', prayerTimes.sunrise.hour, prayerTimes.sunrise.minute)}
-			{@render TableRow('Zhuhr', prayerTimes.dhuhr.hour, prayerTimes.dhuhr.minute)}
-			{@render TableRow('Asr', prayerTimes.asr.hour, prayerTimes.asr.minute)}
-			{@render TableRow('Maghrib', prayerTimes.maghrib.hour, prayerTimes.maghrib.minute)}
-			{@render TableRow('Isha', prayerTimes.isha.hour, prayerTimes.isha.minute)}
+			{@render TableRow(t('prayers_type_fajr'), prayerTimes.fajr.hour, prayerTimes.fajr.minute)}
+			{@render TableRow(
+				t('prayers_type_shuruk'),
+				prayerTimes.sunrise.hour,
+				prayerTimes.sunrise.minute
+			)}
+			{@render TableRow(t('prayers_type_dhohr'), prayerTimes.dhuhr.hour, prayerTimes.dhuhr.minute)}
+			{@render TableRow(t('prayers_type_asr'), prayerTimes.asr.hour, prayerTimes.asr.minute)}
+			{@render TableRow(
+				t('prayers_type_maghrib'),
+				prayerTimes.maghrib.hour,
+				prayerTimes.maghrib.minute
+			)}
+			{@render TableRow(t('prayers_type_isha'), prayerTimes.isha.hour, prayerTimes.isha.minute)}
 		</div>
 	{:catch error}
-		<p>Error: {error.message}</p>
+		<p>{t('route_home_error', { message: error.message })}</p>
 	{/await}
 </div>
