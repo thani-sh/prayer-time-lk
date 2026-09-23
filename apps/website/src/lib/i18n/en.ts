@@ -44,23 +44,22 @@ export const en = {
 	time_format_24h: '24-hour',
 
 	// Settings — corrections
-	route_settings_section_adjustments: 'Corrections',
-	route_settings_section_adjustments_details:
+	route_settings_section_corrections: 'Corrections',
+	route_settings_section_corrections_details:
 		'Use these settings to correct values shown on the app when necessary (eg: Hijri calendar)',
-	route_settings_hijri_calendar_offset_days: 'Hijri calendar offset',
 	hijri_calendar_offset_label: 'Hijri calendar offset',
-	route_settings_hijri_calendar_offset_disabled: 'Disabled',
+	hijri_calendar_offset_disabled: 'Disabled',
 	hijri_calendar_offset_template: '{days} days',
 
 	// Settings — about this website
 	route_settings_about_title: 'About this website',
 	route_settings_about_details:
 		'The app is open-source and free to use under the MIT license, inviting everyone to contribute or share feedback to help improve it. You can explore the source code or contribute via its GitHub repository.',
-	route_settings_open_github: 'Open the Github repository',
-	route_settings_report_feedback: 'Report errors and feedback',
+	route_settings_open_github: 'Source code on Github',
+	route_settings_report_errors: 'Report errors and feedback',
 	route_settings_privacy_notice:
 		'Your privacy is important to us! By using this app, you agree to our Privacy Policy — please read it.',
-	route_settings_read_privacy: 'Open the privacy policy',
+	route_settings_read_privacy: 'Read privacy policy',
 
 	// Settings — download the app
 	route_settings_download_title: 'Download the app',

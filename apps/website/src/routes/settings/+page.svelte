@@ -36,7 +36,7 @@
 
 	function getHijriCalendarOffsetLabel(offset: number) {
 		if (offset === 0) {
-			return t('route_settings_hijri_calendar_offset_disabled');
+			return t('hijri_calendar_offset_disabled');
 		}
 		return t('hijri_calendar_offset_template', { days: offset });
 	}
@@ -90,11 +90,11 @@
 				formatTimeFormat
 			)}
 
-			<h2 class="text-lg font-medium mt-6">{t('route_settings_section_adjustments')}</h2>
-			<p class="text-sm mt-1">{t('route_settings_section_adjustments_details')}</p>
+			<h2 class="text-lg font-medium mt-6">{t('route_settings_section_corrections')}</h2>
+			<p class="text-sm mt-1">{t('route_settings_section_corrections_details')}</p>
 			<fieldset class="fieldset my-2">
 				<legend class="fieldset-legend">
-					{t('route_settings_hijri_calendar_offset_days')}
+					{t('hijri_calendar_offset_label')}
 				</legend>
 				<input
 					type="range"
@@ -123,7 +123,7 @@
 
 			<a href="mailto:contact@prayertime.lk" class="btn btn-ghost justify-start mt-2">
 				<MailIcon class="w-4 h-4 mr-2" />
-				{t('route_settings_report_feedback')}
+				{t('route_settings_report_errors')}
 			</a>
 
 			<p class="text-sm mt-4">{t('route_settings_privacy_notice')}</p>
